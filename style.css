@@ -1,0 +1,122 @@
+*{
+    margin: 0; /*Elimina los margenes predeterminados*/
+    padding: 0; /*Elimina el padding predeterminado de cada elemento*/
+    box-sizing: border-box;
+    outline: none; /**/
+    text-decoration: none; /*Elimin la decoración del texto*/
+    transition: .2s linear; /*Tiene una animacion simple*/
+    list-style-type: none;
+    font-family:"Outfit", sans-serif;
+    
+}
+html{
+    font-size: 62.5%;/*Tamaño de la letra*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    
+}
+section{
+    padding: 20rem 9%;
+}
+/*Parte de Encabezado*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    padding: 10px;
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3);
+    letter-spacing: 0.1rem;
+    font-family:"Outfit", sans-serif;
+    
+}
+header .logo:hover{
+    transform: scale(1.05); /* Hace el logo un 5% más grande */
+    color:  #40723e; /* O cambia el color de todo el logo */
+}
+header .logo span{
+    color: #7e634e;
+    
+}
+header .nav-contenedor ul{
+    font-size: 2rem;
+    color: #666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .nav-contenedor ul li{
+    margin-left: 3rem;
+}
+header .nav-contenedor a{
+    font-size: 2rem;
+    padding: 0.5rem 1rem; /* Padding para hacer la zona de clic más grande y para el hover */
+    color: #666;
+    display: block;
+}
+header .nav-contenedor a:hover{
+    background-color: #82e67f;
+    border-radius: 10px;
+}
+header .nav-contenedor a img{
+    width: 50px;
+    padding: 5px;
+}
+/*Fin de Encabezado*/
+
+/*Parte de Inicio*/
+.inicio{
+    display: flex;
+    align-items: center;
+    min-height: 900px;
+    background: url(Imagenes/salon.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con 40% de opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+.inicio .contenido h3{
+    font-size: 50px;
+    color:#141414;
+    font-weight: bold;
+    
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.inicio .contenido span{
+    font-size: 40px;
+    color:#5c7c48;
+    font-style: oblique;
+    line-height: 50px;
+    
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.inicio .contenido p{
+    font-size: 20px;
+    color: rgba(19, 19, 18, 0.9);
+    font-style: italic;
+    line-height: 50px;
+   
+}
+/*Final de Inicio*/
+
+/*Inicio de Footer*/
+footer {
+    background-color: #fcfcfc; /*Color complementario */
+    color: #1d1c1c; /* Texto claro */
+    padding: 50px 40%;
+    font-size: 14px;
+}
+
+/*Final de Footer*/
