@@ -140,3 +140,20 @@ footer {
     background-color:rgba(255, 135, 65, 0.226); 
     border-radius: 30px;
 }
+
+
+.butt-nos{
+    background-color: #82e67f;
+    color: #1d1c1c;
+    padding: 10px;
+    border-radius: 10px;
+}
+.butt-nos:hover{
+    background-color: #76d373;
+    color: white;
+    box-shadow:2px 2px 4px rgba(99, 83, 50, 0.3); ;
+}
+
+.txt{
+    margin-bottom: 20px;
+}
