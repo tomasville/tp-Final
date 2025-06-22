@@ -152,12 +152,16 @@ footer {
 .butt-nos:hover{
     background-color: rgba(147, 184, 48, 0.226); 
     
-    box-shadow:2px 2px 4px rgba(99, 83, 50, 0.3); 
+    box-shadow:2px 2px 4px rgba(99, 83, 50, 0.3); ;
     border: 2px solid rgb(204, 255, 65);
     
 }
 .info-text{
     width: 50%;
+}
+.vid-limon{
+    display: flex;
+    
 }
 
 .txt{
