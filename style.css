@@ -1,122 +1,234 @@
 *{
-    margin: 0; /*Elimina los margenes predeterminados*/
-    padding: 0; /*Elimina el padding predeterminado de cada elemento*/
-    box-sizing: border-box;
-    outline: none; /**/
-    text-decoration: none; /*Elimin la decoración del texto*/
-    transition: .2s linear; /*Tiene una animacion simple*/
-    list-style-type: none;
-    font-family:"Outfit", sans-serif;
-    
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado de cada elemento */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+    outline: none; /* Elimina el contorno al enfocar elementos */
+    text-decoration: none; /* Elimina la decoración del texto (subrayado, etc.) */
+    transition: .2s linear; /* Agrega una transición suave a las propiedades que cambian */
+    list-style-type: none; /* Elimina los estilos de lista predeterminados */
+    font-family:"Outfit", sans-serif; /* Fuente principal */
 }
-html{
-    font-size: 62.5%;/*Tamaño de la letra*/
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-    overflow-x: hidden;
-    
-}
-section{
-    padding: 20rem 9%;
-}
-/*Parte de Encabezado*/
-header{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: #fff;
-    padding: 2rem 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-header .logo{
-    padding: 10px;
-    font-size: 3rem;
-    color: #333;
-    font-weight: bolder;
-    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3);
-    letter-spacing: 0.1rem;
-    font-family:"Outfit", sans-serif;
-    
-}
-header .logo:hover{
-    transform: scale(1.05); /* Hace el logo un 5% más grande */
-    color:  #40723e; /* O cambia el color de todo el logo */
-}
-header .logo span{
-    color: #7e634e;
-    
-}
-header .nav-contenedor ul{
-    font-size: 2rem;
-    color: #666;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-header .nav-contenedor ul li{
-    margin-left: 3rem;
-}
-header .nav-contenedor a{
-    font-size: 2rem;
-    padding: 0.5rem 1rem; /* Padding para hacer la zona de clic más grande y para el hover */
-    color: #666;
-    display: block;
-}
-header .nav-contenedor a:hover{
-    background-color: #82e67f;
-    border-radius: 10px;
-}
-header .nav-contenedor a img{
-    width: 50px;
-    padding: 5px;
-}
-/*Fin de Encabezado*/
 
-/*Parte de Inicio*/
+html{
+    font-size: 62.5%; /* Define 1rem = 10px para facilitar cálculos */
+    scroll-behavior: smooth; /* Desplazamiento suave al navegar */
+    scroll-padding-top: 6rem; /* Espacio superior al hacer scroll a anclas */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Espaciado general para las secciones */
+section{
+    padding: 20rem 9%; /* Padding superior/inferior y laterales */
+}
+
+/* ================= Encabezado ================= */
+header{
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; left: 0; right: 0; /* Ocupa todo el ancho superior */
+    background: #fff; /* Fondo blanco */
+    padding: 2rem 4%; /* Espaciado interno */
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacia logo y menú */
+    z-index: 1000; /* Se asegura de estar por encima de otros elementos */
+}
+
+header .logo{
+    padding: 10px; /* Espaciado interno del logo */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    color: #333; /* Color del texto */
+    font-weight: bolder; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3); /* Sombra al texto */
+    letter-spacing: 0.1rem; /* Espaciado entre letras */
+    font-family:"Outfit", sans-serif; /* Fuente específica */
+}
+
+header .logo:hover{
+    transform: scale(1.05); /* Efecto de agrandar el logo al pasar el mouse */
+    color:  #40723e; /* Cambia el color del logo al hacer hover */
+}
+
+header .logo span{
+    color: #7e634e; /* Color diferente para el punto del logo */
+}
+
+header .nav-contenedor ul{
+    font-size: 2rem; /* Tamaño de fuente del menú */
+    color: #666; /* Color del texto del menú */
+    display: flex; /* Menú en línea */
+    justify-content: space-around; /* Espaciado entre los ítems */
+    align-items: center; /* Centra verticalmente */
+}
+
+header .nav-contenedor ul li{
+    margin-left: 3rem; /* Espaciado entre los ítems del menú */
+}
+
+header .nav-contenedor a{
+    font-size: 2rem; /* Tamaño de fuente de los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno para área de clic */
+    color: #666; /* Color del texto */
+    display: block; /* Ocupa todo el espacio del li */
+}
+
+header .nav-contenedor a:hover{
+    background-color: #82e67f; /* Fondo verde claro al hacer hover */
+    border-radius: 10px; /* Bordes redondeados al hacer hover */
+}
+
+header .nav-contenedor a img{
+    width: 50px; /* Tamaño del icono de login */
+    padding: 5px; /* Espaciado interno del icono */
+}
+/* =============== Fin de Encabezado =============== */
+
+/* =============== Sección de Inicio =============== */
 .inicio{
-    display: flex;
-    align-items: center;
-    min-height: 900px;
-    background: url(Imagenes/salon.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con 40% de opacidad */
+    display: flex; /* Flex para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    min-height: 900px; /* Altura mínima de la sección */
+    background: url(Imagenes/salon.jpg) no-repeat; /* Imagen de fondo */
+    background-size: cover; /* Cubre toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro translúcido */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra sutil */
 }
+
 .inicio .contenido h3{
-    font-size: 50px;
-    color:#141414;
-    font-weight: bold;
-    
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 50px; /* Título grande */
+    color:#141414; /* Color oscuro */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra al texto */
 }
+
 .inicio .contenido span{
-    font-size: 40px;
-    color:#5c7c48;
-    font-style: oblique;
-    line-height: 50px;
-    
-    font-style: italic;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-size: 40px; /* Tamaño del span */
+    color:#5c7c48; /* Color verde */
+    font-style: oblique; /* Estilo oblicuo */
+    line-height: 50px; /* Altura de línea */
+    font-style: italic; /* Cursiva */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra */
 }
+
 .inicio .contenido p{
-    font-size: 20px;
-    color: rgba(19, 19, 18, 0.9);
-    font-style: italic;
-    line-height: 50px;
-   
+    font-size: 20px; /* Tamaño del texto */
+    color: rgba(19, 19, 18, 0.9); /* Color del texto */
+    font-style: italic; /* Cursiva */
+    line-height: 50px; /* Altura de línea */
 }
-/*Final de Inicio*/
+/* =============== Fin de Inicio =============== */
 
-/*Inicio de Footer*/
+/* =============== Footer =============== */
 footer {
-    background-color: #fcfcfc; /*Color complementario */
-    color: #1d1c1c; /* Texto claro */
-    padding: 50px 40%;
-    font-size: 14px;
+    background-color: #fcfcfc; /* Fondo claro */
+    color: #1d1c1c; /* Texto oscuro */
+    padding: 50px 40%; /* Espaciado interno (muy grande en desktop) */
+    font-size: 14px; /* Tamaño de fuente */
+}
+/* =============== Fin de Footer =============== */
+
+/* =============== RESPONSIVE DESIGN =============== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%; /* Reduce el tamaño base de fuente */
+    }
+    section {
+        padding: 12rem 4%; /* Reduce el padding de las secciones */
+    }
+    header {
+        padding: 1.5rem 2%; /* Reduce el padding del header */
+    }
+    footer {
+        padding: 40px 10%; /* Reduce el padding del footer */
+    }
 }
 
-/*Final de Footer*/
+/* Celulares grandes */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Reduce aún más el tamaño base de fuente */
+    }
+    header {
+        flex-direction: column; /* Header en columna */
+        align-items: flex-start; /* Alinea a la izquierda */
+        padding: 1.2rem 2vw; /* Padding reducido */
+    }
+    header .logo {
+        font-size: 2.2rem; /* Logo más pequeño */
+        padding: 6px 0;
+    }
+    header .nav-contenedor ul {
+        flex-direction: column; /* Menú en columna */
+        gap: 10px; /* Espaciado entre ítems */
+        width: 100%; /* Ocupa todo el ancho */
+        align-items: flex-start; /* Alinea a la izquierda */
+        font-size: 2rem;
+    }
+    header .nav-contenedor ul li {
+        margin-left: 0; /* Elimina margen izquierdo */
+        margin-bottom: 0.8rem; /* Espaciado inferior */
+    }
+    section {
+        padding: 8rem 2vw; /* Padding reducido */
+    }
+    .inicio {
+        min-height: 500px; /* Altura mínima menor */
+        border-radius: 8px; /* Bordes menos redondeados */
+    }
+    .inicio .contenido h3 {
+        font-size: 2.5rem; /* Título más pequeño */
+    }
+    .inicio .contenido span {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .inicio .contenido p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+    footer {
+        padding: 30px 5vw; /* Padding menor en footer */
+        font-size: 13px; /* Fuente más pequeña */
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%; /* Fuente aún más pequeña */
+    }
+    header {
+        padding: 1rem 1vw; /* Padding mínimo */
+    }
+    header .logo {
+        font-size: 1.7rem; /* Logo más pequeño */
+        padding: 4px 0;
+    }
+    .inicio {
+        min-height: 300px; /* Altura mínima muy baja */
+        border-radius: 6px; /* Bordes menos redondeados */
+        padding: 0 1vw; /* Padding lateral mínimo */
+    }
+    .inicio .contenido h3 {
+        font-size: 1.5rem; /* Título pequeño */
+    }
+    .inicio .contenido span {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    .inicio .contenido p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+    section {
+        padding: 5rem 1vw; /* Padding mínimo */
+    }
+    footer {
+        padding: 18px 2vw; /* Footer compacto */
+        font-size: 12px; /* Fuente pequeña */
+    }
+}
+/* =============== Fin de RESPONSIVE DESIGN =============== */

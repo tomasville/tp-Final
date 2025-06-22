@@ -167,3 +167,150 @@ footer {
 .txt{
     margin-bottom: 20px;
 }
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%; /* Reduce el tamaño base de fuente */
+    }
+    section {
+        padding: 12rem 4%; /* Reduce el padding de las secciones */
+    }
+    header {
+        padding: 1.5rem 2%; /* Reduce el padding del header */
+    }
+    .cont {
+        flex-direction: column; /* Apila las secciones verticalmente */
+        align-items: stretch;
+    }
+    .secc {
+        width: 90%; /* Más ancho en tablet */
+        margin: 20px auto;
+        padding: 20px 5vw;
+        height: auto;
+    }
+    .info-text {
+        width: 90%;
+    }
+    .vid-limon {
+        flex-direction: column;
+    }
+    footer {
+        padding: 40px 10%;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Reduce aún más el tamaño base de fuente */
+    }
+    header {
+        flex-direction: column; /* Header en columna */
+        align-items: flex-start;
+        padding: 1.2rem 2vw;
+    }
+    header .logo {
+        font-size: 2.2rem;
+        padding: 6px 0;
+    }
+    header .nav-contenedor ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+        font-size: 2rem;
+    }
+    header .nav-contenedor ul li {
+        margin-left: 0;
+        margin-bottom: 0.8rem;
+    }
+    section {
+        padding: 8rem 2vw;
+    }
+    .inicio {
+        font-size: 16px;
+        padding: 0 2vw;
+        min-height: 350px;
+    }
+    .info {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .tras {
+        padding: 10px 0;
+    }
+    .cont {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .secc {
+        width: 98%;
+        margin: 15px auto;
+        padding: 15px 3vw;
+        height: auto;
+        font-size: 15px;
+    }
+    .info-text {
+        width: 100%;
+    }
+    .vid-limon {
+        flex-direction: column;
+    }
+    footer {
+        padding: 30px 5vw;
+        font-size: 13px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%; /* Fuente aún más pequeña */
+    }
+    header {
+        padding: 1rem 1vw;
+    }
+    header .logo {
+        font-size: 1.7rem;
+        padding: 4px 0;
+    }
+    .inicio {
+        font-size: 13px;
+        padding: 0 1vw;
+        min-height: 200px;
+    }
+    .info {
+        padding: 6px;
+        margin: 6px 0;
+    }
+    .tras {
+        padding: 5px 0;
+    }
+    .cont {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .secc {
+        width: 99%;
+        margin: 8px auto;
+        padding: 8px 2vw;
+        height: auto;
+        font-size: 13px;
+    }
+    .info-text {
+        width: 100%;
+    }
+    .vid-limon {
+        flex-direction: column;
+    }
+    section {
+        padding: 5rem 1vw;
+    }
+    footer {
+        padding: 18px 2vw;
+        font-size: 12px;
+    }
+}

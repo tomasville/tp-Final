@@ -112,3 +112,125 @@ footer {
 a{
     color: #82e67f;;
 }
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%; /* Reduce el tamaño base de fuente */
+    }
+    section {
+        padding: 12rem 4%;
+    }
+    header {
+        padding: 1.5rem 2%;
+    }
+    .tras {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .info1, .info2 {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        padding: 20px 5vw;
+        font-size: 1.7rem;
+        text-align: left;
+    }
+    footer {
+        padding: 40px 10%;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.2rem 2vw;
+    }
+    header .logo {
+        font-size: 2.2rem;
+        padding: 6px 0;
+    }
+    header .nav-contenedor ul {
+        
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+        font-size: 2rem;
+    }
+    header .nav-contenedor ul li {
+        margin-left: 0;
+        margin-bottom: 0.8rem;
+    }
+    section {
+        padding: 8rem 2vw;
+    }
+    .tras {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .info1, .info2 {
+        width: 98%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        padding: 15px 3vw;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .inicio {
+        font-size: 16px;
+        padding: 0 2vw;
+        min-height: 200px;
+    }
+    footer {
+        padding: 30px 5vw;
+        font-size: 13px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+    header {
+        padding: 1rem 1vw;
+    }
+    header .logo {
+        font-size: 1.7rem;
+        padding: 4px 0;
+    }
+    .tras {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .info1, .info2 {
+        width: 99%;
+        height: auto;
+        display: block;
+        margin: 6px auto;
+        padding: 8px 2vw;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .inicio {
+        font-size: 13px;
+        padding: 0 1vw;
+        min-height: 120px;
+    }
+    section {
+        padding: 5rem 1vw;
+    }
+    footer {
+        padding: 18px 2vw;
+        font-size: 12px;
+    }
+}
