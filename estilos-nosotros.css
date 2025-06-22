@@ -86,6 +86,7 @@ header .nav-contenedor a img{
 .info{
     margin: 15px;
     padding: 15px;
+    
 }
 .info h2{
     margin: 50px 0px;
@@ -141,17 +142,26 @@ footer {
     border-radius: 30px;
 }
 
-
 .butt-nos{
-    background-color: #82e67f;
-    color: #1d1c1c;
+    background-color: rgba(204, 255, 65, 0.226); 
+    color: white;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid rgb(204, 255, 65);
 }
 .butt-nos:hover{
-    background-color: #76d373;
-    color: white;
+    background-color: rgba(147, 184, 48, 0.226); 
+    
     box-shadow:2px 2px 4px rgba(99, 83, 50, 0.3); ;
+    border: 2px solid rgb(204, 255, 65);
+    
+}
+.info-text{
+    width: 50%;
+}
+.vid-limon{
+    display: flex;
+    
 }
 
 .txt{
