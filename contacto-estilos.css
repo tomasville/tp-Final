@@ -1,0 +1,114 @@
+*{
+    margin: 0; /*Elimina los margenes predeterminados*/
+    padding: 0; /*Elimina el padding predeterminado de cada elemento*/
+    box-sizing: border-box;
+    outline: none; /**/
+    text-decoration: none; /*Elimin la decoración del texto*/
+    transition: .2s linear; /*Tiene una animacion simple*/
+    list-style-type: none;
+    font-family:"Outfit", sans-serif;
+}
+html{
+    font-size: 62.5%;/*Tamaño de la letra*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    font-family:"Outfit", sans-serif;
+}
+section{
+    padding: 20rem 9%;
+    
+}
+/*Parte de Encabezado*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    padding: 10px;
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3);
+    letter-spacing: 0.1rem;
+    
+}
+header .logo:hover{
+    transform: scale(1.05); /* Hace el logo un 5% más grande */
+    color:  #40723e; /* O cambia el color de todo el logo */
+}
+header .logo span{
+    color: #7e634e;
+    
+}
+header .nav-contenedor ul{
+    font-size: 2rem;
+    color: #666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .nav-contenedor ul li{
+    margin-left: 3rem;
+}
+header .nav-contenedor a{
+    font-size: 2rem;
+    padding: 0.5rem 1rem; /* Padding para hacer la zona de clic más grande y para el hover */
+    color: #666;
+    display: block;
+}
+header .nav-contenedor a:hover{
+    background-color: #82e67f;
+    border-radius: 10px;
+}
+header .nav-contenedor a img{
+    width: 50px;
+    padding: 5px;
+}
+
+.inicio{
+    margin-top: 100px;
+    align-items: center;
+    background: url(Imagenes/ensalada-de-aguacate.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con 40% de opacidad */
+    font-size: 20px;
+    
+    color: whitesmoke;
+    text-shadow:1px 1px 10px #1d1c1c ;
+    
+}
+.tras{
+    background-color: #b6b5b560;
+    display: flex;
+    margin: 0;
+}
+.info1{
+    padding: 20px 30px;
+    width: 50%;;
+    display: inline-block;
+    height: 440px;
+}
+.info2{
+    display: inline-block;
+    height: 440px;
+    padding: 20px 30px;
+    width: 50%;
+    text-align: end;
+}
+footer {
+    background-color: #fcfcfc; /*Color complementario */
+    color: #1d1c1c; /* Texto claro */
+    padding: 50px 40%;
+    font-size: 14px;
+}
+a{
+    color: #82e67f;;
+}
