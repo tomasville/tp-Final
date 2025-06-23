@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos-reserva.css"> <!-- Vincula la hoja de estilos específica para la página de reservas -->
+    <title>Reservas - Mesa Citrica</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Mesa Cítrica<span>.</span></a>
+
+        <nav class="nav-contenedor">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="reserva.html">Reservas</a></li> <!-- Enlace a la página de reservas -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="inicio">
+            <h2>Reserva tu mesa en Mesa Cítrica</h2>
+            <p>Para realizar una reserva, por favor completa el siguiente formulario con tus datos y la fecha y hora deseada. Nos pondremos en contacto contigo para confirmar tu reserva.</p>
+            
+            <form action="#" method="post" class="reserva-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de Reserva:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="terminos" class="terminos">Acepto los terminos y condiciones.</label>
+                <input type="checkbox" name="terminos" id="terminos" class="terminos-boton" required >
+
+                <button type="submit" >Enviar Reserva</button>
+                <p class="mensaje-exito">¡Gracias por tu reserva! Nos pondremos en contacto contigo para confirmarla.</p>
+
+            </form>
+        </div>
+    </main>
+    
+    <!--Seccion Pie de Página-->
+    <footer> 
+        <div class="footer-bottom"> <!-- Contenedor del contenido del footer -->
+            <p>&copy; 2025 Mesa Cítrica. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+            <p>
+                <a href="#">Política de Privacidad</a> | <!-- Enlace a la política de privacidad -->
+                <a href="#">Términos y Condiciones</a> <!-- Enlace a los términos y condiciones -->
+            </p>
+        </div>
+    </footer>
+    <!--Fin sección Pie de Página-->
+</body>
+</html>

@@ -94,7 +94,7 @@ header .nav-contenedor a img{
 .info h2{
     margin: 50px 0px;
     font-weight: bold;
-  background: linear-gradient(to right, rgb(255, 208, 0), rgb(255, 51, 0));
+   background: linear-gradient(to right, rgb(72, 255, 0), #4CAF50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
@@ -146,11 +146,11 @@ footer {
 }
 
 .butt-nos{
-    background-color: rgba(204, 255, 65, 0.226); 
+    background-color: rgba(130, 245, 84, 0.726); 
     color: white;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid rgb(204, 255, 65);
+    border: 1px solid rgb(72, 255, 0);
 }
 .butt-nos:hover{
     background-color: rgba(147, 184, 48, 0.226); 

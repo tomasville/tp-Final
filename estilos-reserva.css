@@ -1,0 +1,167 @@
+*{
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado de cada elemento */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+    outline: none; /* Elimina el contorno al enfocar elementos */
+    text-decoration: none; /* Elimina la decoración del texto (subrayado, etc.) */
+    transition: .2s linear; /* Agrega una transición suave a las propiedades que cambian */
+    list-style-type: none; /* Elimina los estilos de lista predeterminados */
+    font-family:"Outfit", sans-serif; /* Fuente principal */
+}
+
+html{
+    font-size: 62.5%; /* Define 1rem = 10px para facilitar cálculos */
+    scroll-behavior: smooth; /* Desplazamiento suave al navegar */
+    scroll-padding-top: 6rem; /* Espacio superior al hacer scroll a anclas */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+/* ================= Encabezado ================= */
+header{
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; left: 0; right: 0; /* Ocupa todo el ancho superior */
+    background: #fff; /* Fondo blanco */
+    padding: 2rem 4%; /* Espaciado interno */
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacia logo y menú */
+    z-index: 1000; /* Se asegura de estar por encima de otros elementos */
+    border-bottom: 1px solid #8a8888;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo{
+    padding: 10px; /* Espaciado interno del logo */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    color: #333; /* Color del texto */
+    font-weight: bolder; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3); /* Sombra al texto */
+    letter-spacing: 0.1rem; /* Espaciado entre letras */
+    font-family:"Outfit", sans-serif; /* Fuente específica */
+}
+
+header .logo:hover{
+    transform: scale(1.05); /* Efecto de agrandar el logo al pasar el mouse */
+    color:  #40723e; /* Cambia el color del logo al hacer hover */
+}
+
+header .logo span{
+    color: #7e634e; /* Color diferente para el punto del logo */
+}
+
+header .nav-contenedor ul{
+    font-size: 2rem; /* Tamaño de fuente del menú */
+    color: #666; /* Color del texto del menú */
+    display: flex; /* Menú en línea */
+    justify-content: space-around; /* Espaciado entre los ítems */
+    align-items: center; /* Centra verticalmente */
+}
+
+header .nav-contenedor ul li{
+    margin-left: 3rem; /* Espaciado entre los ítems del menú */
+}
+
+header .nav-contenedor a{
+    font-size: 2rem; /* Tamaño de fuente de los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno para área de clic */
+    color: #666; /* Color del texto */
+    display: block; /* Ocupa todo el espacio del li */
+}
+
+header .nav-contenedor a:hover{
+    background-color: #82e67f; /* Fondo verde claro al hacer hover */
+    border-radius: 10px; /* Bordes redondeados al hacer hover */
+}
+
+header .nav-contenedor a img{
+    width: 50px; /* Tamaño del icono de login */
+    padding: 5px; /* Espaciado interno del icono */
+}
+/* =============== Fin de Encabezado =============== */
+main{
+    padding: 15rem 9%; /* Espaciado interno del main */
+    font-size: 1.6rem; /* Tamaño de fuente base */
+    color: #333; /* Color del texto principal */
+    background-color: #f8f8f8; /* Fondo claro para el contenido principal */
+}
+.inicio{
+    display: flex; /* Usa flexbox para alinear elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 2rem; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para la sección de inicio */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+.inicio h2{
+    font-size: 3rem; /* Tamaño grande para el título */
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(72, 255, 0), #4CAF50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.inicio p{
+    font-size: 1.8rem; /* Tamaño de fuente para el párrafo */
+    color: #555; /* Color del texto del párrafo */
+    margin-bottom: 2rem; /* Espacio debajo del párrafo */
+}
+.reserva-formulario{
+    display: flex; /* Usa flexbox para alinear los campos del formulario */
+    flex-direction: column; /* Coloca los campos en columna */
+    gap: 1rem; /* Espacio entre los campos */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+.reserva-formulario label{
+    font-size: 1.6rem; /* Tamaño de fuente para las etiquetas */
+    color: #333; /* Color del texto de las etiquetas */
+}
+.reserva-formulario input{
+    padding: 0.8rem; /* Espaciado interno de los campos */
+    font-size: 1.6rem; /* Tamaño de fuente para los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+.reserva-formulario input:focus{
+    border-color: #4CAF50; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra verde al enfocar */
+}
+.reserva-formulario button{
+    padding: 1rem; /* Espaciado interno del botón */
+    font-size: 1.6rem; /* Tamaño de fuente del botón */
+    color: #fff; /* Color del texto del botón */
+   background: linear-gradient(to right, rgb(60, 211, 0), #4CAF50);
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+.reserva-formulario button:hover{
+    background-color: #45a049; /* Cambia el color de fondo al hacer hover */
+    transform: scale(1.05); /* Agranda el botón al hacer hover */
+}
+.terminos{
+    font-size: 1.4rem; /* Tamaño de fuente para el texto de términos */
+    color: #333; /* Color del texto */
+    margin-top: 1rem; /* Espacio encima del texto de términos */
+}
+.terminos-boton{
+    width: 20px; /* Ancho del checkbox */
+    height: 20px; /* Alto del checkbox */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    accent-color: #4CAF50; /* Color del checkbox */
+    transition: background-color 0.2s ease; /* Transición suave al cambiar el color */
+    border-radius: 5px; /* Bordes redondeados para el checkbox */
+}
+
+
+footer {
+    background-color: #fcfcfc; /*Color complementario */
+    color: #1d1c1c; /* Texto claro */
+    padding: 50px 40%;
+    font-size: 14px;
+}

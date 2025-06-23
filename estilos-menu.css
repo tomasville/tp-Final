@@ -22,18 +22,14 @@ body{
 
 /*Parte de Encabezado*/
 .main-header{
-    position: fixed; /*Hace que el encabezado se quede fijo en la parte superior al desplazarse*/
-    top: 0; left: 0; right: 0; /*Lo posiciona en la parte superior, lo alinea a la izquierda, lo alinea a la derecha, ocupando todo el ancho*/
-    background: white; /*Fondo blanco para el encabezado*/
-    display: flex; /*Se utiliza Flexbox para alinear elementos internos (logo y navegación)*/
-    align-items: center; /*Centra los elementos verticalmente en el header*/
-    justify-content: space-between; /*Distribuye el espacio entre el logo y la navegación*/
-    padding: 10px; /*Establece un padding de 10px en todos los lados*/
-    font-size: 3rem; /*Tamaño de fuente para los elementos del header*/
-    color: #333;
-    font-weight: bolder; /*Texto en negrita fuerte*/
-    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3);
-    letter-spacing: 0.1rem; /*Espaciado entre letras*/
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
     border-bottom: 1px solid #8a8888;
     border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -82,9 +78,13 @@ body{
 
 /*Comienzo de Menú*/
 .titulo{ /*Estilos para el título principal de la página de menú (h1)*/
-    font-family: 'Playfair Display', serif; /*Fuente para el título principal*/
+   
     font-size: 35px; /*Tamaño para el titulo*/
-    color: #4CAF50; 
+   /* color: #4CAF50; */
+    font-weight: bold;
+     background: linear-gradient(to right, rgb(72, 255, 0), #4CAF50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: 20px; /*Espacio superior para el título*/
     margin-bottom: 30px; /*Espacio inferior*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -93,7 +93,7 @@ body{
     text-align: center; /*Centra el texto del título*/
 }
 h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales", "Postres")*/
-    font-family: 'monserrat', sans-serif;
+   
     font-size: 20px;
     color: #2a3f29;
     text-align: center;
@@ -122,7 +122,7 @@ h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales"
     height: auto;/*Altura automática de la sección*/
 }
 .menu-item-carta header h3{
-    font-family: 'roboto', sans-serif;
+   
     font-size: 24px;
     color: #62c95f;
     font-weight: bold; /*Negrita para el título*/
@@ -150,7 +150,7 @@ h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales"
     margin-right: auto; 
 }
 .menu-item-carta p{
-    font-family: 'roboto', sans-serif;
+    
     font-size: 15px;
     color: black;
     line-height: 1.6; /*Espaciado entre líneas*/
@@ -167,7 +167,7 @@ h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales"
     gap: 15px; /*Espacio entre los elementos del footer*/
 }
 .menu-item-carta footer .precio{
-    font-family: 'Monserrat', sans-serif;
+    
     font-size: 18px;
     font-weight: bold;
     color: #1aaa32;
@@ -179,7 +179,7 @@ h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales"
     border: none; /*Sin borde*/
     border-radius: 5px;
     padding: 12px 25px;
-    font-family: 'moserrat', sans-serif;
+   
     font-size: 15px;
     cursor: pointer; /*Cambia el cursor a una mano para indicar que es clickeable*/
     font-weight: bold; 
