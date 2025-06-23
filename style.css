@@ -164,7 +164,7 @@ footer {
         padding: 6px 0;
     }
     header .nav-contenedor ul {
-        flex-direction: column; /* Menú en columna */
+        
         gap: 10px; /* Espaciado entre ítems */
         width: 100%; /* Ocupa todo el ancho */
         align-items: flex-start; /* Alinea a la izquierda */

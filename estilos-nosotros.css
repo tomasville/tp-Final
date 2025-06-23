@@ -220,7 +220,7 @@ footer {
         padding: 6px 0;
     }
     header .nav-contenedor ul {
-        flex-direction: column;
+        
         gap: 10px;
         width: 100%;
         align-items: flex-start;

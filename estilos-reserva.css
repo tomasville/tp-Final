@@ -162,6 +162,73 @@ main{
 footer {
     background-color: #fcfcfc; /*Color complementario */
     color: #1d1c1c; /* Texto claro */
-    padding: 50px 40%;
+    padding: 50px 4%; /* Cambia el padding horizontal fijo por porcentaje */
     font-size: 14px;
+    text-align: center;
+}
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 1200px) {
+    main {
+        padding: 12rem 4%;
+    }
+    .reserva-formulario {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1.5rem 2%;
+        text-align: center;
+    }
+    header .nav-contenedor ul {
+        
+        gap: 1rem;
+    }
+    header .nav-contenedor ul li {
+        margin-left: 0;
+    }
+    main {
+        padding: 15rem 2%;
+    }
+    .reserva-formulario {
+        max-width: 100vw;
+        padding: 0 1rem;
+    }
+    .inicio {
+        padding: 1rem;
+    }
+    footer {
+        padding: 30px 2%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    header .logo {
+        font-size: 2.2rem;
+    }
+    main {
+        padding: 8rem 1%;
+    }
+    .inicio h2 {
+        font-size: 2rem;
+    }
+    .reserva-formulario label,
+    .reserva-formulario input,
+    .reserva-formulario button {
+        font-size: 1.2rem;
+    }
+    .terminos {
+        font-size: 1.1rem;
+    }
+    footer {
+        padding: 20px 1%;
+        font-size: 11px;
+    }
 }
