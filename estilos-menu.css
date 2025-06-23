@@ -1,0 +1,202 @@
+*{
+    margin: 0; /*Elimina los márgenes predeterminados de todos los elementos*/
+    padding: 0; /*Elimina el padding predeterminado de todos los elementos*/
+    box-sizing: border-box; /*Asegura que el padding y el borde se incluyan en el ancho y alto total de un elemento*/
+    outline: none; /*Elimina el contorno que aparece al enfocar elementos*/
+    text-decoration: none; /*Elimin la decoración del texto*/
+    transition: .2s linear; /*Aplica una transición suave de 0.2 segundos a la mayoría de las propiedades*/
+    list-style-type: none; /*Elimina los marcadores de lista por defecto (puntos, números)*/
+    font-family:"Outfit", sans-serif; /*Define la fuente predeterminada para todos los elementos*/
+}
+html{
+    font-size: 62.5%; /*Establece el tamaño de fuente base para que 1rem = 10px (si el navegador usa 16px por defecto)*/
+    scroll-behavior: smooth; /*Hace que el desplazamiento de la página sea suave*/
+    scroll-padding-top: 6rem; /*Deja un espacio en la parte superior al saltar a un ancla para que el contenido no quede debajo del header fijo*/
+    overflow-x: hidden; /*Evita el desplazamiento horizontal de la página*/
+    font-family:"Outfit", sans-serif; /*Define la fuente predeterminada para el HTML*/
+}
+body{
+    padding-top: 100px; /*Añade un espacio en la parte superior del body para que el contenido no quede debajo del encabezado fijo*/
+}
+
+
+/*Parte de Encabezado*/
+.main-header{
+    position: fixed; /*Hace que el encabezado se quede fijo en la parte superior al desplazarse*/
+    top: 0; left: 0; right: 0; /*Lo posiciona en la parte superior, lo alinea a la izquierda, lo alinea a la derecha, ocupando todo el ancho*/
+    background: white; /*Fondo blanco para el encabezado*/
+    display: flex; /*Se utiliza Flexbox para alinear elementos internos (logo y navegación)*/
+    align-items: center; /*Centra los elementos verticalmente en el header*/
+    justify-content: space-between; /*Distribuye el espacio entre el logo y la navegación*/
+    padding: 10px; /*Establece un padding de 10px en todos los lados*/
+    font-size: 3rem; /*Tamaño de fuente para los elementos del header*/
+    color: #333;
+    font-weight: bolder; /*Texto en negrita fuerte*/
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3);
+    letter-spacing: 0.1rem; /*Espaciado entre letras*/
+    border-bottom: 1px solid #8a8888;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.main-header .logo {
+    padding: 10px; /* Padding adicional para el logo */
+    font-size: 3rem; /* Tamaño de fuente del logo */
+    color: #333; /* Color del texto del logo */
+    font-weight: bolder; /* Negrita para el logo */
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3); /* Sombra de texto para el logo */
+    letter-spacing: 0.1rem; /* Espaciado entre letras del logo */
+}
+.main-header .logo:hover{ /*Efecto al pasar el mouse sobre el logo*/
+    transform: scale(1.05); /*Hace el logo un 5% más grande*/
+    color:  #40723e; /*Cambia el color del logo al pasar el mouse*/
+}
+.main-header .logo span{ /*Estilos para el punto decorativo en el logo*/
+    color: #7e634e; /*Color del punto*/
+    
+}
+.main-header .nav-contenedor ul{ 
+    font-size: 2rem; /*Tamaño de fuente de los elementos de la lista de navegación*/
+    color: #666;
+    display: flex; /*Utiliza Flexbox para alinear los elementos 'li' horizontalmente*/
+    justify-content: space-around; /*Distribuye el espacio entre los elementos de la lista*/
+    align-items: center; /*Centra los elementos verticalmente*/
+}
+.main-header .nav-contenedor ul li{
+    margin-left: 3rem; /*Margen a la izquierda de cada elemento de lista*/
+}
+.main-header .nav-contenedor a{
+    font-size: 2rem;  /*Tamaño de fuente de los enlaces de navegación*/
+    padding: 0.5rem 1rem; /*Padding para hacer la zona de clic más grande y para el hover*/
+    color: #666; /*Color de texto de los enlaces*/
+    display: block; /*Hace que el enlace ocupe todo el ancho disponible en su contenedor*/
+}
+.main-header .nav-contenedor a:hover{
+    background-color: #82e67f; /*Cambia el fondo del enlace al pasar el mouse*/
+    border-radius: 10px; /*Añade bordes redondeados al fondo*/
+}
+.main-header .nav-contenedor a img{
+    width: 50px; /*Ancho de la imagen dentro del enlace (icono de login)*/
+    padding: 5px;  /*Padding alrededor de la imagen*/
+}
+/*Fin de Encabezado*/
+
+/*Comienzo de Menú*/
+.titulo{ /*Estilos para el título principal de la página de menú (h1)*/
+    font-family: 'Playfair Display', serif; /*Fuente para el título principal*/
+    font-size: 35px; /*Tamaño para el titulo*/
+    color: #4CAF50; 
+    margin-top: 20px; /*Espacio superior para el título*/
+    margin-bottom: 30px; /*Espacio inferior*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+    line-height: 1.2; /*Altura de línea para el título*/
+    text-align: center; /*Centra el texto del título*/
+}
+h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales", "Postres")*/
+    font-family: 'monserrat', sans-serif;
+    font-size: 20px;
+    color: #2a3f29;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #63aa66; /*Línea inferior para separar visualmente*/
+    padding-bottom: 10px; /*Espacio entre el texto y la línea*/
+    text-transform: uppercase; /*Convierte el texto a mayúsculas*/
+}
+.menu-item-carta {
+    border: 1px solid #ddd; /*Borde suave para definir la tarjeta*/
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 30px; /*Espacio entre tarjetas, para que no se peguen*/
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center; /* Centra el contenido textual */
+    display: flex; /*Convierte la tarjeta en un contenedor flex*/
+    flex-direction: column; /*Apila los elementos verticalmente*/
+    justify-content: space-between;  /*Empuja el footer (precio/botón) hacia la parte inferior si hay espacio*/
+    width: 300px;
+    border-radius: 8px; /*Borde de la sección*/
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fdfdfd;
+    text-align: center;
+    height: auto;/*Altura automática de la sección*/
+}
+.menu-item-carta header h3{
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #62c95f;
+    font-weight: bold; /*Negrita para el título*/
+    margin-top: 0; /*Elimina el margen superior por defecto*/
+    margin-bottom: 10px; /*Espacio debajo del título*/
+    letter-spacing: normal; /*Espaciado normal entre letras*/
+}
+.menu-general{
+    display: flex; /*Convierte este contenedor en un contenedor flex*/
+    flex-wrap: wrap; /*Permite que las tarjetas se envuelvan a la siguiente línea si no caben*/
+    gap: 20px; /*Crea un espacio de 20px entre las tarjetas (horizontal y vertical)*/
+    justify-content: center; /*Centra las tarjetas horizontalmente dentro de la sección*/
+    padding: 20px; /*Relleno alrededor de las tarjetas dentro de la sección*/
+    margin-top: 30px; /*Margen superior de la sección*/
+    border: 5px solid rgb(255, 255, 255);
+}
+.menu-item-carta img{
+    max-width: 100%; /*Asegura que la imagen no se desborde de su contenedor*/
+    height: 200px; /*Altura fija para todas las imágenes*/
+    object-fit: cover; /*Recorta la imagen para que cubra el espacio sin distorsionarse*/
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block; /*Para permitir centrar con margin auto*/
+    margin-left: auto; /*Centra la imagen horizontalmente*/
+    margin-right: auto; 
+}
+.menu-item-carta p{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.6; /*Espaciado entre líneas*/
+    margin-bottom: 15px; /*Espacio debajo del párrafo*/
+}
+.menu-item-carta footer{
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee; /*Línea separadora sutil en la parte superior del footer*/
+    display: flex; /*Utiliza Flexbox para organizar el precio y el botón*/
+    flex-wrap: wrap; /*Permite que los elementos del footer salten a la siguiente línea si no caben*/
+    justify-content: center; /*Centra los elementos del footer horizontalmente*/
+    align-items: center;  /*Alinea los elementos del footer verticalmente*/
+    gap: 15px; /*Espacio entre los elementos del footer*/
+}
+.menu-item-carta footer .precio{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1aaa32;
+    white-space: nowrap;  /*Evita que el precio se rompa en varias líneas*/
+}
+.boton{
+    background-color: #4CAF50;
+    color: white;
+    border: none; /*Sin borde*/
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-family: 'moserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer; /*Cambia el cursor a una mano para indicar que es clickeable*/
+    font-weight: bold; 
+}
+.boton:hover { /*Efecto al pasar el mouse sobre el botón*/
+    background-color: #45a049; /*Verde más oscuro al pasar el mouse */
+    transform: translateY(-2px); /*Pequeño efecto de levantamiento*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Sombra al pasar el mouse*/
+}
+/*Fin de Menú*/
+
+/*Principio de Footer*/
+footer {
+    background-color: #fcfcfc; /* Fondo claro */
+    color: #1d1c1c; /* Texto oscuro */
+    padding: 50px 40%; /* Espaciado interno (muy grande en desktop) */
+    font-size: 14px; /* Tamaño de fuente */
+}
+/*Fin de Footer*/
+

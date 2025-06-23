@@ -3,9 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-menu.css">
     <title>Menú</title>
 </head>
 <body>
-    <h1>Aqui puedes ver el menú</h1>
+  <!--Sección del encabezado-->
+  <header class="main-header"> <!-- Encabezado fijo de la página -->
+    <a href="index.html" class="logo">Mesa Cítrica<span>.</span></a> <!-- Logo con enlace a inicio y punto decorativo -->
+
+      <nav class="nav-contenedor"> <!-- Contenedor del menú de navegación -->
+        <ul> <!-- Lista de enlaces del menú -->
+          <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+          <li><a href="menu.html">Menú</a></li> <!-- Enlace a la página del menú -->
+          <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+          <li><a href="nosotros.html">Nosotros</a></li> <!-- Enlace a la página sobre nosotros -->
+          <li><a href="galeria.html">Galeria</a></li> <!-- Enlace a la galería de imágenes -->
+          <li><a href="#"><img src="Imagenes/Login.png"></a></li> <!-- Icono de login (sin enlace funcional) -->
+        </ul>
+      </nav>
+  </header>
+<!--Fin Sección de encabezado-->
+
+<!--Inicio del Menú-->
+<main>
+<h1 class="titulo">Mesa Cítrica-Descubre Nuestro Menú</h1>
+  
+<h2>Entradas (Oberturas Frescas)</h2> 
+  <section class="menu-general"> 
+        <article class="menu-item-carta"> 
+          <header> 
+            <h3>Carpaccio de Pulpo con Aderezo de Lima y Cilantro</h3> 
+          </header>
+          <img src="Imagenes/Entradas/entrada 1-carpaccio de pulpo.jpg" alt="Carpaccio De Pulpo"> 
+          <p>Finas láminas de pulpo tierno, marinadas en una emulsión vibrante de lima, aceite de oliva virgen extra, cilantro fresco y un toque de chile jalapeño. Servido sobre una cama de rúcula y espolvoreado con ralladura de limón confitada.</p> 
+          <footer> 
+            <span class="precio">$2.000</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+        </article>
+
+        <article class="menu-item-carta"> 
+          <header> 
+            <h3>Ensalada de Quinoa con Pomelo Rosado, Aguacate y Menta</h3> 
+          </header>
+          <img src="Imagenes/Entradas/entrada 2-ensalada de quinoa.jpg" alt="Ensalada de Quínoa"> 
+          <p>Quínoa cocida al dente, mezclada con gajos de pomelo rosado jugoso, cubos de aguacate cremoso, pepino crujiente, cebolla morada fina y hojas de menta fresca. Aderezada con vinagreta de miel y limón Meyer.</p> 
+          <footer> 
+            <span class="precio">$3.000</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+        </article>
+
+        <article class="menu-item-carta"> 
+          <header> 
+            <h3>Tostadas de Ricotta Batida con Higos, Pistachos y Zest de Naranja</h3> 
+          </header>
+          <img src="Imagenes/Entradas/entrada 3-tostada ricota.jpg" alt="Tostada de Ricotta"> 
+          <p>Rebanadas de pan artesanal tostado, cubiertas con ricotta fresca batida hasta una textura sedosa, coronadas con higos frescos en temporada, pistachos tostados y ralladura de naranja orgánica. Un hilo de miel de azahar para finalizar.</p> 
+          <footer> 
+            <span class="precio">$3.500</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+        </article>
+
+        <article class="menu-item-carta"> 
+          <header> 
+            <h3>Tartar de Atún Rojo con Mayonesa de Wasabi y Crujiente de Arroz al Limón</h3> 
+          </header>
+          <img src="Imagenes/Entradas/entrada 4-tartar de atun.jpg" alt="Tartar de Atún"> 
+          <p>Atún rojo de aleta amarilla finamente picado, aderezado con jengibre, cebolleta y salsa de soja, realzado con una mayonesa casera de wasabi. Acompañado de tostadas crujientes de arroz infusionadas con ralladura de lima.</p> 
+          <footer> 
+            <span class="precio">$4.000</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+        </article>
+
+        <article class="menu-item-carta"> 
+          <header> 
+            <h3>Sopa Fría de Pepino y Yogur con Perlas de Aceite de Albahaca y Zest de Lima</h3> 
+          </header>
+          <img src="Imagenes/Entradas/entrada 5-sopa fria.jpg" alt="Sopa Fria"> 
+          <p>Refrescante crema fría elaborada con pepino fresco, yogur griego natural, ajo suave y menta, ligeramente especiada. Coronada con esferas de aceite de albahaca y una vibrante ralladura de lima.</p> 
+          <footer> 
+            <span class="precio">$2.500</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+        </article>
+  </section>
+
+  <h2>Platos Principales (Armonías Vibrantes)</h2>
+  <section class="menu-general">
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Pesca del Día en Croûte de Hierbas Cítricas con Salsa de Azafrán y Naranja</h3> 
+          </header>
+          <img src="Imagenes/Principales/principal 1-pesca del dia.jpg" alt="Croûte de Hierbas"> 
+          <p>Filete de pesca fresca del día (lubina, corvina) cubierto con una costra crujiente de hierbas aromáticas (perejil, tomillo, romero) y ralladura de limón. Acompañado de una delicada salsa cremosa de azafrán infusionada con jugo de naranja y un puré de coliflor trufado.</p> 
+          <footer> 
+            <span class="precio">$5.000</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Pollo de Corral al Limón Confitado y Aceitunas Kalamata</h3> 
+          </header>
+          <img src="Imagenes/Principales/principal 2-pollo al limon.jpg" alt="Pollo al Limón"> 
+          <p>Muslos y contra muslos de pollo de corral, cocinados lentamente hasta la perfección en su jugo con gajos de limón confitado, aceitunas Kalamata, ajo y orégano fresco. Servido con cuscús de verduras al vapor y piñones tostados.</p> 
+          <footer> 
+            <span class="precio">$4.200</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Risotto Cremoso de Calabacín, Espárragos y Zest de Lima</h3> 
+          </header>
+          <img src="Imagenes/Principales/principal 3-risotto.jpg" alt="Risotto"> 
+          <p>Arroz Arborio cocido lentamente en un caldo vegetal aromático, con calabacín tierno, puntas de espárragos, queso parmesano Reggiano y el toque final de la ralladura de lima para una explosión de frescura.</p> 
+          <footer> 
+            <span class="precio">$4.000</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Lomo de Cerdo Ibérico con Glaseado de Naranja y Puré de Boniato Especiado</h3> 
+          </header>
+          <img src="Imagenes/Principales/principal 4-lomo de cerdo.jpg" alt="Lomo de Cerdo"> 
+          <p>Tiernas medallones de lomo de cerdo ibérico, sellados a la perfección y bañados en un glaseado agridulce de naranja y jengibre. Servido con un sedoso puré de boniato infusionado con especias suaves.</p> 
+          <footer> 
+            <span class="precio">$5.000</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Pasta Fresca con Ragú de Verduras Asadas al Limón y Queso de Cabra</h3> 
+          </header>
+          <img src="Imagenes/Principales/principal 5-pasta.jpg" alt="Pasta con Ragú de Verduras"> 
+          <p>Pasta fresca artesanal salteada con un rico ragú de verduras de temporada asadas (tomates cherry, calabacín, berenjena) infusionadas con jugo y ralladura de limón. Coronado con desmoronado de queso de cabra cremoso y hierbas frescas.</p> 
+          <footer> 
+            <span class="precio">$4.300</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+  </section>
+
+  <h2>Postres (Finales Luminosos)</h2>
+  <section class="menu-general">
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Tarta de Limón y Merengue</h3> 
+          </header>
+          <img src="Imagenes/Postres/postre 1-tarta de limon.jpg" alt="Tarta de Limón"> 
+          <p>Esfera de mousse de limón suave, sobre un crumble crujiente de galletas de almendra. Decorado con picos de merengue suizo flameado y láminas de cítricos cristalizadas.</p> 
+          <footer> 
+            <span class="precio">$3.100</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Panna Cotta de Coco con Gel de Frutos Rojos y Caviar Cítrico</h3> 
+          </header>
+          <img src="Imagenes/Postres/postre 2-panna cotta.jpg" alt="Panna Cotta de Coco"> 
+          <p>Panna Cotta de coco sedosa y vegana, acompañada de un gel vibrante de frutos rojos (frambuesa, fresa, arándano) y perlas explosivas de caviar cítrico que añaden un estallido de sabor agridulce.</p> 
+          <footer> 
+            <span class="precio">$3.500</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Mousse de Chocolate Blanco y Bergamota con Crumble de Pistacho</h3> 
+          </header>
+          <img src="Imagenes/Postres/postre 3-mousse.jpg" alt="Mousse de Chocolate Blanco"> 
+          <p>Suave y aireada mousse de chocolate blanco infusionada con el aroma floral y cítrico de la bergamota. Servida con un crujiente crumble de pistacho y un hilo de salsa de frutos del bosque.</p> 
+          <footer> 
+            <span class="precio">$2.500</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Milhojas de Crema de Vainilla y Frutos rojos</h3> 
+          </header>
+          <img src="Imagenes/Postres/postre 4-mil hojas.jpg" alt="Milhojas de Crema de Vainilla y Frutos rojos"> 
+          <p>Capas crujientes de hojaldre casero, rellenas de una suave crema pastelera de vainilla. Acompañado de una selección de frutos tropicales frescos (mango, piña, kiwi) y un sirope brillante de maracuyá.</p> 
+          <footer> 
+            <span class="precio">$5.500</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+
+    <article class="menu-item-carta"> 
+          <header> 
+            <h3>Helado Artesanal de Mandarina y Romero con Crumble de Almendras</h3> 
+          </header>
+          <img src="Imagenes/Postres/postre 5-helado.jpg" alt="Helado Artesanal"> 
+          <p>Dos bolas de nuestro helado casero cremoso, con el vibrante sabor de la mandarina y un toque aromático de romero fresco. Servido con un crujiente y tostado crumble de almendras.</p> 
+          <footer> 
+            <span class="precio">$2.400</span> 
+            <button class="boton">Hacer Pedido</button> 
+          </footer>
+    </article>
+  </section>
+</main>
+<!--Final de Menú-->
+
+<!--Seccion Pie de Página-->
+<footer> 
+    <div class="footer-bottom"> <!-- Contenedor del contenido del footer -->
+        <p>&copy; 2025 Mesa Cítrica. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+        <p>
+            <a href="#">Política de Privacidad</a> | <!-- Enlace a la política de privacidad -->
+            <a href="#">Términos y Condiciones</a> <!-- Enlace a los términos y condiciones -->
+        </p>
+    </div>
+</footer>
+<!--Fin sección Pie de Página-->
 </body>
 </html>
