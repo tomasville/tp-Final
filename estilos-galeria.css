@@ -83,6 +83,17 @@ header .nav-contenedor a img{
     padding: 5px; /* Espaciado interno del icono */
 }
 /* =============== Fin de Encabezado =============== */
+/* =============== Footer =============== */
+footer {
+    background-color: #fcfcfc; /* Fondo claro */
+    color: #1d1c1c; /* Texto oscuro */
+    padding: 50px 40%; /* Espaciado interno (muy grande en desktop) */
+    font-size: 14px; /* Tamaño de fuente */
+    text-align: center;
+}
+/* =============== Fin de Footer =============== */
+
+
 
 .contenedor{
     width: 100%;
@@ -247,12 +258,9 @@ header .nav-contenedor a img{
         align-items: center;
     }
 
-
-
-
     footer {
-        padding: 18px 2vw; /* Footer compacto */
-        font-size: 12px; /* Fuente pequeña */
+        padding: 3rem; /* Footer compacto */
+        font-size: 1.5rem; /* Fuente pequeña */
     }
 }
 /* =============== Fin de RESPONSIVE DESIGN =============== */
