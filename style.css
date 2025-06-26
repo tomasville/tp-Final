@@ -10,7 +10,7 @@
 }
 
 html{
-    font-size: 62.5%; /* Define 1rem = 10px para facilitar cálculos */
+    font-size: 62.5%; /* Define 1rem = 10px */
     scroll-behavior: smooth; /* Desplazamiento suave al navegar */
     scroll-padding-top: 6rem; /* Espacio superior al hacer scroll a anclas */
     overflow-x: hidden; /* Evita el scroll horizontal */
@@ -77,11 +77,6 @@ header .nav-contenedor a{
 header .nav-contenedor a:hover{
     background-color: #82e67f; /* Fondo verde claro al hacer hover */
     border-radius: 10px; /* Bordes redondeados al hacer hover */
-}
-
-header .nav-contenedor a img{
-    width: 50px; /* Tamaño del icono de login */
-    padding: 5px; /* Espaciado interno del icono */
 }
 /* =============== Fin de Encabezado =============== */
 

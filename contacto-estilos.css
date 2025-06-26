@@ -70,10 +70,6 @@ header .nav-contenedor a:hover{
     background-color: #82e67f;
     border-radius: 10px;
 }
-header .nav-contenedor a img{
-    width: 50px;
-    padding: 5px;
-}
 
 .inicio{
     margin-top: 100px;

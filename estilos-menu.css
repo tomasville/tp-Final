@@ -70,21 +70,14 @@ body{
     background-color: #82e67f; /*Cambia el fondo del enlace al pasar el mouse*/
     border-radius: 10px; /*Añade bordes redondeados al fondo*/
 }
-.main-header .nav-contenedor a img{
-    width: 50px; /*Ancho de la imagen dentro del enlace (icono de login)*/
-    padding: 5px;  /*Padding alrededor de la imagen*/
-}
 /*Fin de Encabezado*/
 
 /*Comienzo de Menú*/
 .titulo{ /*Estilos para el título principal de la página de menú (h1)*/
-   
+
     font-size: 35px; /*Tamaño para el titulo*/
-   /* color: #4CAF50; */
+    color: #4CAF50;
     font-weight: bold;
-     background: linear-gradient(to right, rgb(72, 255, 0), #4CAF50);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-top: 20px; /*Espacio superior para el título*/
     margin-bottom: 30px; /*Espacio inferior*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -179,7 +172,6 @@ h2{ /*Estilos para los subtítulos de sección ("Entradas", "Platos Principales"
     border: none; /*Sin borde*/
     border-radius: 5px;
     padding: 12px 25px;
-   
     font-size: 15px;
     cursor: pointer; /*Cambia el cursor a una mano para indicar que es clickeable*/
     font-weight: bold; 
