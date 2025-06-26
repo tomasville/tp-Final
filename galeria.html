@@ -1,14 +1,164 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento HTML5 -->
+<html lang="es"> <!-- Indica el idioma principal del documento -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="estilos-galeria.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la web responsive en móviles -->
+    <title>Mesa Cítrica</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos-galeria.css"> <!-- Vincula la hoja de estilos principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Optimiza la carga de fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Optimiza la carga de fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"> <!-- Fuente personalizada -->
 </head>
 <body>
-    <h1>Galeria</h1>
-    <p>Estamos trabajando en algo aqui!</p>
-    <a href="index.html">Inicio</a>
+<!--Sección del encabezado-->
+    <header> <!-- Encabezado fijo de la página -->
+        <a href="index.html" class="logo">Mesa Cítrica<span>.</span></a> <!-- Logo con enlace a inicio y punto decorativo -->
+
+        <nav class="nav-contenedor"> <!-- Contenedor del menú de navegación -->
+            <ul> <!-- Lista de enlaces del menú -->
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="menu.html">Menú</a></li> <!-- Enlace a la página del menú -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                <li><a href="nosotros.html">Nosotros</a></li> <!-- Enlace a la página sobre nosotros -->
+                <li><a href="reserva.html">Reservas</a></li> <!-- Enlace a la página de reservas -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin Sección de encabezado -->
+    <main>
+        <div class="contenedor">
+            <div class="main-header">
+                <span class="header__subtitulo">GALERÍA</span>
+                <h1 class="header__titulo">Galería de Imágenes</h1>
+                <p class="header__leyenda">La calidad y el sabor de los mejores productos Argentinos seleccionas especialmente para ti en el Restaurante Mesa Critica</p>
+            </div>
+            <section class="galeria">
+                <h1 class="header__subtitulo">ENTRADAS</h1>
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Entradas/entrada 1-carpaccio de pulpo.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Carpaccio de Pulpo: Una Delicia Marina</h3>
+                            <p class="descripcion__parrafo">El carpaccio de pulpo es una exquisitez culinaria que celebra la frescura y la delicadeza del mar. Este plato, de inspiración italiana pero con un toque muy mediterráneo, se caracteriza por su presentación elegante y sus sabores sutiles.</p>
+                            <p class="descripcion__parrafo">Este manjar marino se presenta de forma artística, con las lonchas dispuestas cuidadosamente sobre un plato. Se realza su sabor y frescura con un aderezo sencillo pero vibrante: aceite de oliva virgen extra de calidad, un toque cítrico de limón o lima, y a menudo un espolvoreado de pimentón dulce o picante (como el pimentón de la Vera) que le aporta un color y aroma característicos. Algunas preparaciones pueden incluir también finas hierbas, perejil picado o incluso alcaparras para añadir matices.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Entradas/entrada 2-ensalada de quinoa.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Ensalada de Quinoa: Frescura y Nutrición en Cada Bocado</h3>
+                            <p class="descripcion__parrafo">La ensalada de quinoa es un plato vibrante y nutritivo que combina la versatilidad de la quinoa con una explosión de ingredientes frescos y coloridos. Es una opción ideal para una comida ligera, un acompañamiento saludable o un plato principal vegetariano y vegano.</p>
+                            <p class="descripcion__parrafo">En el corazón de esta ensalada se encuentra la quinoa, un pseudocereal ancestral, cocida a la perfección hasta que sus pequeños granos se vuelven tiernos y adquieren una textura ligeramente masticable. Rica en proteínas, fibra y minerales, la quinoa aporta una base sustanciosa y completa.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Entradas/entrada 3-tostada ricota.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Tostada de Ricotta: Un Bocado Simple y Versátil</h3>
+                            <p class="descripcion__parrafo">La tostada de ricota es un plato que encapsula la belleza de la simplicidad y la versatilidad. Es una opción deliciosa y nutritiva, perfecta para un desayuno ligero, un brunch encantador o una merienda reconfortante.</p>
+                            <p class="descripcion__parrafo">El corazón de este plato es una base crujiente y dorada de pan tostado, que puede variar desde una robusta rebanada de pan de campo hasta un delicado pan multicereal o una baguette rústica. Sobre esta base, se extiende generosamente una capa de ricota fresca. La ricota, con su textura suave y ligeramente granulada y su sabor delicado y lácteo, aporta una cremosidad reconfortante.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Entradas/entrada 4-tartar de atun.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Tartar de Atún: Frescura y Sabor en Cada Bocado</h3>
+                            <p class="descripcion__parrafo">La tartar de atún es un plato que representa la sofisticación de la cocina moderna, destacando la pureza y la calidad de su ingrediente principal: el atún fresco. Es una preparación que cautiva tanto por su vibrante colorido como por su explosión de sabores y texturas.</p>
+                            <p class="descripcion__parrafo">Este exquisito plato se elabora con dados pequeños y uniformes de atún de la más alta calidad, preferiblemente atún rojo o de aleta amarilla, cuidadosamente seleccionados por su frescura y color intenso. La clave está en la delicadeza del corte y en una mínima manipulación para preservar la integridad del pescado.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Entradas/entrada 5-sopa fria.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Sopa Fría: El Frescor Hecho Plato</h3>
+                            <p class="descripcion__parrafo">La sopa fría es un concepto culinario que abraza la frescura y la ligereza, convirtiéndose en el aliado perfecto para los días cálidos o como un entrante refrescante en cualquier ocasión. A diferencia de sus contrapartes calientes, las sopas frías no requieren cocción y se sirven a bajas temperaturas, destacando la esencia pura y vibrante de sus ingredientes.</p>
+                            <p class="descripcion__parrafo">Su preparación suele ser sencilla: ingredientes frescos (principalmente vegetales y frutas) se trituran hasta obtener una textura suave y homogénea, y luego se enfrían a la perfección. La clave reside en la calidad de los productos y en un balance armonioso de sabores.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="galeria">
+                <h1 class="header__subtitulo">PRINCIPALES</h1>
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Principales/principal 1-pesca del dia.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Pesca del Día: La Frescura del Mar en tu Plato</h3>
+                            <p class="descripcion__parrafo">La Pesca del Día no es solo un plato, es una promesa de frescura inigualable y un homenaje al mar. Representa la esencia de la cocina basada en productos de temporada, donde la estrella es el pescado o marisco que los pescadores han traído directamente de las aguas en su jornada más reciente.</p>
+                            <p class="descripcion__parrafo">Este concepto celebra la simplicidad y la calidad. Al optar por la "Pesca del Día", estás eligiendo lo mejor que el océano tiene para ofrecer en ese momento: un pez recién capturado, con su piel brillante, su carne firme y un sabor puro que solo la frescura absoluta puede brindar.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Principales/principal 2-pollo al limon.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Pollo al Limón: Un Clásico Mediterráneo Lleno de Frescura</h3>
+                            <p class="descripcion__parrafo">El pollo al limón es un plato reconfortante y a la vez vibrante, un verdadero clásico de la cocina mediterránea que deleita por su sencillez y su explosión de sabor. Es la opción ideal cuando se busca una comida ligera, aromática y llena de ese toque cítrico que tanto gusta.</p>
+                            <p class="descripcion__parrafo">Este plato se centra en piezas de pollo, ya sean muslos, contramuslos, pechugas o un pollo entero troceado, que se cocinan hasta alcanzar una ternura y jugosidad perfectas. La magia reside en la salsa, que es la verdadera protagonista y lo que le da su carácter distintivo.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Principales/principal 3-risotto.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Risotto: La Esencia Cremosa de la Cocina Italiana</h3>
+                            <p class="descripcion__parrafo">El risotto no es solo un plato, es una técnica culinaria y una celebración de la paciencia y el sabor que se originó en el norte de Italia. Es la máxima expresión de la cremosidad y la profundidad de los sabores, lograda a través de un proceso de cocción lento y atento.</p>
+                            <p class="descripcion__parrafo">En el corazón de todo risotto se encuentra un arroz de grano corto, como el Carnaroli o Arborio, variedades ideales por su alto contenido de almidón. Este almidón es el secreto de su característica textura sedosa. El proceso comienza con el sofrito de cebolla o chalota, a menudo con ajo, en mantequilla o aceite de oliva. A esto se le añade el arroz, que se tuesta ligeramente hasta que los granos se vuelven translúcidos, un paso crucial conocido como tostatura.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Principales/principal 4-lomo de cerdo.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Lomo de Cerdo: Versatilidad y Sabor en Tu Mesa</h3>
+                            <p class="descripcion__parrafo">El lomo de cerdo es un corte magro y versátil, muy apreciado en la gastronomía de diversas culturas por su textura tierna y su capacidad para absorber una amplia gama de sabores. Es una opción excelente para quienes buscan una carne blanca sustanciosa y fácil de adaptar a diferentes estilos culinarios.</p>
+                            <p class="descripcion__parrafo">Este corte se obtiene de la parte dorsal del cerdo, a lo largo de la columna vertebral, lo que le confiere su forma alargada y su bajo contenido de grasa en comparación con otras partes del animal. Su carne es de color rosado claro, con una textura fina que, si se cocina correctamente, resulta increíblemente jugosa y suave al paladar.</p>
+                            
+                        </figcaption>
+                    </figure>
+                </article>
+                <hr class="galeria__separacion">
+                <article class="contenedor__galeria">
+                    <figure class="galeria__foto">
+                        <img src="/Imagenes/Principales/principal 5-pasta.jpg" alt="" class="foto">
+                        <figcaption class="foto__descripcion">
+                            <h3 class="descripcion__titulo">Pasta: El Corazón de la Cocina Italiana</h3>
+                            <p class="descripcion__parrafo">La pasta es mucho más que un alimento; es un emblema de la gastronomía italiana, una base culinaria globalmente amada y una expresión de infinita versatilidad. Desde sus humildes orígenes, se ha transformado en un lienzo perfecto para una diversidad de sabores y texturas, adaptándose a cualquier paladar y ocasión.</p>
+                            <p class="descripcion__parrafo">Elaborada tradicionalmente a partir de una mezcla de sémola de trigo duro y agua, y en algunas variantes con huevo, la pasta se presenta en una asombrosa variedad de formas y tamaños. Desde las largas y delgadas hebras de spaghetti, fettuccine o linguine, hasta las formas cortas como penne, rigatoni, fusilli o las intrincadas farfalle y orecchiette, cada tipo está diseñado para capturar y realzar una salsa específica.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
+    </main>
+<!--Seccion Pie de Página-->
+<footer> <!-- Pie de página -->
+    <div class="footer-bottom"> <!-- Contenedor del contenido del footer -->
+        <p>&copy; 2025 Mesa Cítrica. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+        <p>
+            <a href="#">Política de Privacidad</a> | <!-- Enlace a la política de privacidad -->
+            <a href="#">Términos y Condiciones</a> <!-- Enlace a los términos y condiciones -->
+        </p>
+    </div>
+</footer>
+<!--Fin sección Pie de Página-->
 </body>
 </html>

@@ -1,22 +1,266 @@
-h1{
-    text-align: center;
-    color: #4CAF50;
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
+*{
+    margin: 0; /*Elimina los márgenes predeterminados de todos los elementos*/
+    padding: 0; /*Elimina el padding predeterminado de todos los elementos*/
+    box-sizing: border-box; /*Asegura que el padding y el borde se incluyan en el ancho y alto total de un elemento*/
+    outline: none; /*Elimina el contorno que aparece al enfocar elementos*/
+    text-decoration: none; /*Elimina la decoración del texto*/
+    transition: .2s linear; /*Aplica una transición suave de 0.2 segundos a la mayoría de las propiedades*/
+    list-style-type: none; /*Elimina los marcadores de lista por defecto (puntos, números)*/
+    font-family:"Outfit", sans-serif; /*Define la fuente predeterminada para todos los elementos*/
 }
-p {
-    text-align: center;
-    color: #333;
-    font-family: Arial, sans-serif;
-    margin-top: 10px;
-    font-size: 18px;
+html{
+    font-size: 62.5%; /*Establece el tamaño de fuente base para que 1rem = 10px (si el navegador usa 16px por defecto)*/
+    scroll-behavior: smooth; /*Hace que el desplazamiento de la página sea suave*/
+    scroll-padding-top: 6rem; /*Deja un espacio en la parte superior al saltar a un ancla para que el contenido no quede debajo del header fijo*/
+    overflow-x: hidden; /*Evita el desplazamiento horizontal de la página*/
+    font-family:"Outfit", sans-serif; /*Define la fuente predeterminada para el HTML*/
 }
-a {
+body{
+    padding-top: 100px; /*Añade un espacio en la parte superior del body para que el contenido no quede debajo del encabezado fijo*/
+}
+
+
+/* ================= Encabezado ================= */
+header{
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; left: 0; right: 0; /* Ocupa todo el ancho superior */
+    background: #fff; /* Fondo blanco */
+    padding: 2rem 4%; /* Espaciado interno */
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacia logo y menú */
+    z-index: 1000; /* Se asegura de estar por encima de otros elementos */
+    border-bottom: 1px solid #8a8888;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo{
+    padding: 10px; /* Espaciado interno del logo */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    color: #333; /* Color del texto */
+    font-weight: bolder; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(99, 83, 50, 0.3); /* Sombra al texto */
+    letter-spacing: 0.1rem; /* Espaciado entre letras */
+    font-family:"Outfit", sans-serif; /* Fuente específica */
+}
+
+header .logo:hover{
+    transform: scale(1.05); /* Efecto de agrandar el logo al pasar el mouse */
+    color:  #40723e; /* Cambia el color del logo al hacer hover */
+}
+
+header .logo span{
+    color: #7e634e; /* Color diferente para el punto del logo */
+}
+
+header .nav-contenedor ul{
+    font-size: 2rem; /* Tamaño de fuente del menú */
+    color: #666; /* Color del texto del menú */
+    display: flex; /* Menú en línea */
+    justify-content: space-around; /* Espaciado entre los ítems */
+    align-items: center; /* Centra verticalmente */
+}
+
+header .nav-contenedor ul li{
+    margin-left: 3rem; /* Espaciado entre los ítems del menú */
+}
+
+header .nav-contenedor a{
+    font-size: 2rem; /* Tamaño de fuente de los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno para área de clic */
+    color: #666; /* Color del texto */
+    display: block; /* Ocupa todo el espacio del li */
+}
+
+header .nav-contenedor a:hover{
+    background-color: #82e67f; /* Fondo verde claro al hacer hover */
+    border-radius: 10px; /* Bordes redondeados al hacer hover */
+}
+
+header .nav-contenedor a img{
+    width: 50px; /* Tamaño del icono de login */
+    padding: 5px; /* Espaciado interno del icono */
+}
+/* =============== Fin de Encabezado =============== */
+/* =============== Footer =============== */
+footer {
+    background-color: #fcfcfc; /* Fondo claro */
+    color: #1d1c1c; /* Texto oscuro */
+    padding: 50px 40%; /* Espaciado interno (muy grande en desktop) */
+    font-size: 14px; /* Tamaño de fuente */
+    text-align: center;
+}
+/* =============== Fin de Footer =============== */
+
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__subtitulo{
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(72, 255, 0), #4CAF50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+    line-height: 1.2;
+}
+
+.header__titulo{
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(72, 255, 0), #4CAF50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+    line-height: 1.2;
+}
+
+.header__leyenda{
+    font-size: 2rem;
+    width: 50%;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.contenedor__galeria{
+    display: flex;
+    justify-content: center;
+}
+
+
+.galeria__foto{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem;
+
+}
+.foto{
+    max-width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
     display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #4CAF50;
-    font-family: Arial, sans-serif;
-    text-decoration: none;
-    font-size: 18px;
 }
+
+.foto__descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.descripcion__titulo{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #2a3f29;
+}
+
+.descripcion__parrafo{
+    font-size: 1.8rem;
+    color: #2a3f29;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%; /* Reduce el tamaño base de fuente */
+    }
+    section {
+        padding: 12rem 4%; /* Reduce el padding de las secciones */
+    }
+    header {
+        padding: 1.5rem 2%; /* Reduce el padding del header */
+    }
+    footer {
+        padding: 40px 10%; /* Reduce el padding del footer */
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Reduce aún más el tamaño base de fuente */
+    }
+    header {
+        flex-direction: column; /* Header en columna */
+        align-items: flex-start; /* Alinea a la izquierda */
+        padding: 1.2rem 2vw; /* Padding reducido */
+    }
+    header .logo {
+        font-size: 2.2rem; /* Logo más pequeño */
+        padding: 6px 0;
+    }
+    header .nav-contenedor ul {
+        
+        gap: 10px; /* Espaciado entre ítems */
+        width: 100%; /* Ocupa todo el ancho */
+        align-items: flex-start; /* Alinea a la izquierda */
+        font-size: 2rem;
+    }
+    header .nav-contenedor ul li {
+        margin-left: 0; /* Elimina margen izquierdo */
+        margin-bottom: 0.8rem; /* Espaciado inferior */
+    }
+
+    footer {
+        padding: 30px 5vw; /* Padding menor en footer */
+        font-size: 13px; /* Fuente más pequeña */
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%; /* Fuente aún más pequeña */
+    }
+    header {
+        padding: 1rem 1vw; /* Padding mínimo */
+    }
+    header .logo {
+        font-size: 1.7rem; /* Logo más pequeño */
+        padding: 4px 0;
+    }
+    
+    .contenedor{
+        padding: 1rem;
+    }
+    .main-header, .header__leyenda{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .galeria__foto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 3rem; /* Footer compacto */
+        font-size: 1.5rem; /* Fuente pequeña */
+    }
+}
+/* =============== Fin de RESPONSIVE DESIGN =============== */
