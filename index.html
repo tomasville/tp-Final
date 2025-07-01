@@ -1,56 +1,40 @@
-<!DOCTYPE html> <!-- Define el tipo de documento HTML5 -->
-<html lang="es"> <!-- Indica el idioma principal del documento -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la web responsive en móviles -->
-    <title>Mesa Cítrica</title> <!-- Título de la pestaña del navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- Vincula la hoja de estilos principal -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Optimiza la carga de fuentes de Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Optimiza la carga de fuentes de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"> <!-- Fuente personalizada -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MerPyC</title>
+    <link rel="stylesheet" href="/estilos/estilos-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-<!--Sección del encabezado-->
-    <header> <!-- Encabezado fijo de la página -->
-        <a href="index.html" class="logo">Mesa Cítrica<span>.</span></a> <!-- Logo con enlace a inicio y punto decorativo -->
+    <nav>
+        <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="/public/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/public/miniatletismo.html">Mini Atletismo</a></li>
+            <li><a href="/public/programa.html">Programa de entrenamientos</a></li>
+            <li><a href="/public/contactos.html">Contacto</a></li>
+            <li><a href="/login.html">Iniciar Sesion</a></li>
+            <img src="/img/logo-merpyc.jpg" class="logo">
+        </ul>
+    </nav>
 
-        <nav class="nav-contenedor"> <!-- Contenedor del menú de navegación -->
-            <ul> <!-- Lista de enlaces del menú -->
-                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
-                <li><a href="menu.html">Menú</a></li> <!-- Enlace a la página del menú -->
-                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
-                <li><a href="nosotros.html">Nosotros</a></li> <!-- Enlace a la página sobre nosotros -->
-                <li><a href="galeria.html">Galeria</a></li> <!-- Enlace a la galería de imágenes -->
-                <li><a href="reserva.html">Reservas</a></li> <!-- Enlace a la página de reservas -->
-            </ul>
-        </nav>
-    </header>
-<!--Fin Sección de encabezado-->
+    <main>
+        <section class="hero">
+            <div class="transparent-background">
+                <h1>Bienvenido a Mercedes Pista y Campo</h1>
+                <p>El club de atletismo que te impulsa a alcanzar tus metas.</p>
+            
+            </div>
+        </section>
 
-<!--Seccion Inicio-->
-<main>
-    <section class="inicio"> <!-- Sección principal de bienvenida -->
-    <div class="contenido"> <!-- Contenedor del contenido de bienvenida -->
-        <h3>Un paseo por la <span>huerta,</span> directo a tu mesa.</h3> <!-- Título principal con palabra destacada -->
-        <p>Descubre la pureza y frescura en cada ingrediente de Mesa Cítrica.</p> <!-- Descripción breve -->
-    </div>
-</section>
-</main>
-<!--Fin Sección Inicio-->
-
-<!--Seccion Pie de Página-->
-<footer> <!-- Pie de página -->
-    <div class="footer-bottom"> <!-- Contenedor del contenido del footer -->
-        <p>&copy; 2025 Mesa Cítrica. Todos los derechos reservados.</p> <!-- Derechos de autor -->
-        <p>
-            <a href="#">Política de Privacidad</a> | <!-- Enlace a la política de privacidad -->
-            <a href="#">Términos y Condiciones</a> <!-- Enlace a los términos y condiciones -->
-        </p>
-    </div>
-</footer>
-<!--Fin sección Pie de Página-->
+    </main>
+    <footer>
+        <p>&copy; 2025 MerPyC. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
-
-

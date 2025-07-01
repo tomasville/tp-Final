@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/priv/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Planes">Planes <i class="fi fi-rr-document icon"></i></a></li>
+                <li><a href="./priv/resultados.html">Resultados <i class="fi fi-rr-stats icon"></i></a></li>
+                <li><a href="/priv/perfil.html">Perfil <i class="fi fi-rr-user icon"></i></a></li>
+                <li><a href="" id="cerrar-sesion">Cerrar Sesión <i class="fi fi-rr-exit icon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Hola</h1>
+        <div>
+            <h2>Planes de entrenamientos</h2>
+        </div>
+        <div class="planes-container">
+            <section>
+                <h3>Planes Gimnasio</h3>
+                <div class="planes-pista">
+                    <a href="/priv/planes/GIMNASIO - 25.pdf">Descargar el plan</a>
+                    <button type="button" class="vista-previa-btn" data-tipo="gym">Vista previa</button>
+                </div>
+                
+            </section>
+            <section>
+                <h3>Planes Pista</h3>
+                <div class="planes-pista">
+                    <h4>Varones</h4>
+                    
+                    <a href="/priv/planes/PLANES JUNIO 25 - VARONES.pdf">Descargar el plan</a>
+                    <button type="button" class="vista-previa-btn" data-tipo="varones">Vista previa</button>
+                </div>
+                <div class="planes-pista">
+                    <h4>Mujeres</h4>
+                    <a href="/priv/planes/PLANES JUNIO 25 - MUJERES.pdf">Descargar el plan</a>
+                    <button type="button" class="vista-previa-btn" data-tipo="mujeres">Vista previa</button>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 MerPyC. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Modal para vista previa -->
+<div id="modal-vista-previa" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:9999;">
+    <div style="background:#fff; padding:20px; border-radius:10px; max-width:90vw; max-height:90vh; position:relative; display:flex; flex-direction:column; align-items:center;">
+        <button id="cerrar-modal" style="position:absolute; top:10px; right:15px; font-size:2rem; background:none; border:none; cursor:pointer;">&times;</button>
+        <div id="imagenes-previa" style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; align-items:center;"></div>
+    </div>
+</div>
+
+<!-- Modal para zoom de imagen -->
+<div id="img-zoom-modal" class="img-zoom-modal">
+    <button class="img-zoom-cerrar" id="cerrar-zoom">&times;</button>
+    <img id="img-zoom-grande" src="" alt="Zoom imagen">
+</div>
+
+    <script>
+    // Redirigir al login si el usuario no está logueado
+    const username = localStorage.getItem('usuario');
+    if (!username) {
+        window.location.href = '/login.html';
+    }
+
+        // Obtiene el nombre de usuario de la URL y lo muestra en el h1
+        const params = new URLSearchParams(window.location.search);
+        const usuario = params.get('usuario');
+
+        // Mostrar el nombre del usuario en el h1
+        if (usuario) {
+            document.querySelector('h1').textContent = `¡Hola ${usuario}!`;
+            // Guarda en localStorage para futuras páginas
+            localStorage.setItem('usuario', usuario);
+        } else if (username) {
+            document.querySelector('h1').textContent = `¡Hola ${username}!`;
+        } else {
+            document.querySelector('h1').textContent = '¡Hola!';
+        }
+
+        // Vista previa de imágenes
+        const imagenesVarones = [
+            "/priv/img/PLANES JUNIO 25 - VARONES_page-0001.jpg",
+            "/priv/img/PLANES JUNIO 25 - VARONES_page-0002.jpg"
+        ];
+        const imagenesMujeres = [
+            "/priv/img/PLANES JUNIO 25 - MUJERES_page-0001.jpg",
+            "/priv/img/PLANES JUNIO 25 - MUJERES_page-0002.jpg"
+        ];
+        const imagenesGym = [
+            "/priv/img/GYM - 25.png"
+        ];
+
+        document.querySelectorAll('.vista-previa-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tipo = this.getAttribute('data-tipo');
+                let imagenes = [];
+                if (tipo === 'varones') imagenes = imagenesVarones;
+                else if (tipo === 'mujeres') imagenes = imagenesMujeres;
+                else if (tipo === 'gym') imagenes = imagenesGym;
+
+                const contenedor = document.getElementById('imagenes-previa');
+                contenedor.innerHTML = '';
+                imagenes.forEach((src, idx) => {
+                    const divImg = document.createElement('div');
+                    divImg.style.display = 'flex';
+                    divImg.style.flexDirection = 'column';
+                    divImg.style.alignItems = 'center';
+
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.style.maxWidth = '350px';
+                    img.style.maxHeight = '80vh';
+                    img.style.margin = '10px';
+                    img.alt = 'Vista previa plan ' + tipo;
+
+                    // Botón de zoom
+                    const zoomBtn = document.createElement('button');
+                    zoomBtn.textContent = 'Zoom';
+                    zoomBtn.style.marginBottom = '10px';
+                    zoomBtn.style.cursor = 'pointer';
+                    zoomBtn.onclick = function() {
+                        document.getElementById('img-zoom-grande').src = src;
+                        document.getElementById('img-zoom-modal').style.display = 'flex';
+                    };
+
+                    divImg.appendChild(img);
+                    divImg.appendChild(zoomBtn);
+                    contenedor.appendChild(divImg);
+                });
+                document.getElementById('modal-vista-previa').style.display = 'flex';
+            });
+        });
+
+        document.getElementById('cerrar-modal').onclick = function() {
+            document.getElementById('modal-vista-previa').style.display = 'none';
+        };
+
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('modal-vista-previa').onclick = function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        };
+
+        // Cerrar modal de zoom
+        document.getElementById('cerrar-zoom').onclick = function() {
+            document.getElementById('img-zoom-modal').style.display = 'none';
+            document.getElementById('img-zoom-grande').src = '';
+        };
+        // Cerrar zoom al hacer clic fuera de la imagen
+        document.getElementById('img-zoom-modal').onclick = function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.getElementById('img-zoom-grande').src = '';
+            }
+        };
+        
+        // Cerrar sesión y redirigir a index.html
+    document.getElementById('cerrar-sesion').addEventListener('click', function(e) {
+        e.preventDefault();
+        localStorage.removeItem('usuario');
+        window.location.href = '/index.html';
+    });
+    </script>
+</body>
+</html>

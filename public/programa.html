@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Entrenamientos - MerPyC</title>
+    <link rel="stylesheet" href="../estilos/programa-estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+</head>
+<body>
+    <nav>
+         <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="/public/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/public/miniatletismo.html">Mini Atletismo</a></li>
+            <li><a href="/public/programa.html">Programa de entrenamientos</a></li>
+            <li><a href="/public/contactos.html">Contacto</a></li>
+            <li><a href="/login.html">Iniciar Sesion</a></li>
+            <img src="/img/logo-merpyc.jpg" class="logo">
+        </ul>
+    </nav>
+    <main class="main-flex">
+        <div class="main-contenido">
+            <section class="seccion-info">
+                <i class="fi fi-rr-users icono"></i>
+                <h2>Categorías y Edades</h2>
+                <ul>
+                    <li><strong>Niños:</strong> 5 a 12 años</li>
+                    <li><strong>Jóvenes:</strong> 13 a 17 años</li>
+                    <li><strong>Adultos:</strong> 18 a 34 años</li>
+                    <li><strong>Masters:</strong> 35 años en adelante</li>
+                </ul>
+            </section>
+            <section class="seccion-info">
+                <i class="fi fi-rr-trophy icono"></i>
+                <h2>Disciplinas de Atletismo</h2>
+                <ul>
+                    <li>Velocidad (60m, 80m, 100m, 150m, 200m, 300m, 400m)</li>
+                    <li>Medio fondo (600m, 800m, 1500m)</li>
+                    <li>Fondo (3000m, 5000m, 10.000m)</li>
+                    <li>Saltos (largo, alto, triple)</li>
+                    <li>Lanzamientos (bala, disco, jabalina, martillo)</li>
+                    <li>Pruebas combinadas (heptatlón, decatlón)</li>
+                </ul>
+            </section>
+            <section class="seccion-info">
+                <i class="fi fi-rr-interrogation icono"></i>
+                <h2>Horarios y Lugares</h2>
+                <ul>
+                    <li><strong>Niños y Mini Atletismo:</strong> Miércoles 18:00-19:30 y Sábados 10:00-11:30 en Escuela Tomas Jofre y Pista Parque Costanera Río V.</li>
+                    <li><strong>Jóvenes, Adultos y Masters:</strong> Lunes, Martes, Miércoles, Jueves de 16:30-18:00 y Sábados 09:30-11:00, todo en la Pista Parque Costanera Río V.</li>
+                </ul>
+            </section>
+            <section class="seccion-info">
+                <i class="fi fi-rr-books icono"></i>
+                <h2>Metodología de Entrenamiento</h2>
+                <p>
+                    Nuestro enfoque combina el desarrollo técnico, físico y mental de cada atleta, adaptando la planificación según la edad y nivel. Trabajamos con ejercicios progresivos, juegos para los más pequeños, rutinas específicas para cada disciplina y seguimiento personalizado. Fomentamos el trabajo en equipo, la motivación y el respeto por los valores deportivos.
+                </p>
+            </section>
+        </div>
+        <section class="galeria">
+            <img id="galeria-img" src="../img/galeria/Imagen de WhatsApp 2025-02-20 a las 22.43.49_9dfa199a.jpg" alt="Galería MerPyC">
+           
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 MerPyC. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+    // Galería automática
+    const imagenes = [
+        "../img/galeria/Imagen de WhatsApp 2025-02-20 a las 22.43.49_9dfa199a.jpg",
+        "../img/galeria/Imagen de WhatsApp 2025-03-08 a las 09.10.31_9f92dd59.jpg",
+        "../img/galeria/Imagen de WhatsApp 2025-03-08 a las 17.33.35_502b458d.jpg",
+        "../img/galeria/Imagen de WhatsApp 2025-03-08 a las 17.33.36_7773e789.jpg",
+        "../img/galeria/Imagen de WhatsApp 2025-03-24 a las 11.41.18_cc140efa.jpg",
+        "../img/galeria/Imagen de WhatsApp 2025-04-29 a las 22.40.50_4c362603.jpg",
+        "../img/galeria/Imagen de WhatsApp 2025-06-08 a las 19.03.48_cb96300f.jpg",
+        // Agrega más nombres si tienes más imágenes en la carpeta galeria
+    ];
+    let indice = 0;
+    const galeriaImg = document.getElementById('galeria-img');
+    let intervalo;
+
+    function mostrarImagen(i) {
+        galeriaImg.style.opacity = 0;
+        setTimeout(() => {
+            galeriaImg.src = imagenes[i];
+            galeriaImg.style.opacity = 1;
+        }, 400);
+    }
+
+    function avanzar() {
+        indice = (indice + 1) % imagenes.length;
+        mostrarImagen(indice);
+    }
+
+    // Iniciar galería automática
+    intervalo = setInterval(avanzar, 3500);
+</script>
+</body>
+</html>

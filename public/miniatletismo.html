@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/miniatletismo-estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+    <title>Mini Atletismo - MerPyC</title>
+</head>
+<body>
+
+    <nav>
+         <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="/public/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/public/miniatletismo.html">Mini Atletismo</a></li>
+            <li><a href="/public/programa.html">Programa de entrenamientos</a></li>
+            <li><a href="/public/contactos.html">Contacto</a></li>
+            <li><a href="/login.html">Iniciar Sesion</a></li>
+            <img src="/img/logo-merpyc.jpg" class="logo">
+        </ul>
+    </nav>
+
+
+    <main>
+        <section>
+            <h2>Escuela de Atletismo</h2>
+            <p>Bienvenidos a la Escuela de Atletismo de Mercedes Pista y Campo, donde fomentamos el amor por el deporte y la actividad física en los más jóvenes.</p>
+        </section>
+        <section>
+            <h3>¿Qué es el Mini Atletismo?</h3>
+            <p>El Mini Atletismo es un programa diseñado para introducir a los niños y niñas en el mundo del atletismo de una manera divertida y segura. A través de juegos y actividades adaptadas, los pequeños atletas desarrollan habilidades fundamentales como correr, saltar y lanzar.</p>
+        </section>
+        <section class="detalles">
+            <div class="detalles-container">
+                <i class="fi fi-rr-calendar-clock icon"></i>
+                <h3>¿Cuándo?</h3>
+                <p>MIÉRCOLES <br> 18:00 A 19:30 <br> SÁBADO <br>10:00 A 11:30</p>
+            </div>
+            <div class="detalles-container">
+                <i class="fi fi-rr-map-marker icon"></i>
+                <h3>¿Dónde?</h3>
+                <p>MIERCOLES <br> Escuela Tomas Jofre (Tucuman entre Olloqui y Chile) <br> SABADOS <br> Pista del Parque Constanera Rio V</p>
+                <a href="#" id="abrir-modal-mapas" class="boton">Ver Ubicaciones</a>
+                <!-- Modal para mostrar los mapas -->
+                <div id="modal-mapas" class="modal-mapas">
+                  <div class="modal-contenido">
+                    <span class="cerrar-modal" id="cerrar-modal">&times;</span>
+                    <h2>Pista de Atletismo</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3319.4873370852974!2d-65.47116792526685!3d-33.6963365101451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDQxJzQ2LjgiUyA2NcKwMjgnMDYuOSJX!5e0!3m2!1ses-419!2sar!4v1750821312149!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>Escuela Tomas Jofre</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.765921463449!2d-65.4526690252672!3d-33.68912480977329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d16aeb164c78bb%3A0xd2dcae75908bb20f!2sEsc.%20N%C2%BA%2043%20-%20Tomas%20Jofre!5e0!3m2!1ses-419!2sar!4v1750821453653!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+            </div>
+            <div class="detalles-container">
+                <i class="fi fi-rr-users icon"></i>
+                <h3>¿Edades?</h3>
+                <p>El Mini Atletismo está dirigido a niños y niñas de 5 a 12 años.</p>
+            </div>
+        </section>
+        <div class="volver">
+            <a href="/index.html"><span class="material-symbols-outlined">arrow_back</span>Volver a inicio</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 MerPyC. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+document.getElementById('abrir-modal-mapas').onclick = function(e) {
+    e.preventDefault();
+    document.getElementById('modal-mapas').classList.add('activo');
+};
+document.getElementById('cerrar-modal').onclick = function() {
+    document.getElementById('modal-mapas').classList.remove('activo');
+};
+// Cerrar modal al hacer clic fuera del contenido
+document.getElementById('modal-mapas').onclick = function(e) {
+    if (e.target === this) {
+        this.classList.remove('activo');
+    }
+};
+</script>
+</body>
+</html>

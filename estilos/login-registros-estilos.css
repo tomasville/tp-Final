@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif; /* Fuente personalizada para el título */
+}
+body {
+    background-color: #f0f0f0; /* Color de fondo claro */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+header {
+    background-color: #343a40; /* Fondo oscuro para el encabezado */
+    color: #ffffff; /* Texto blanco para el encabezado */
+    padding: 10px 20px; /* Espacio alrededor del contenido del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior de la pantalla */
+    top: 0; /* Alinea el encabezado al borde superior de la ventana */
+    width: 100%; /* El encabezado ocupa todo el ancho de la ventana */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos del encabezado */
+    align-items: center; /* Centra verticalmente los elementos del encabezado */
+}
+header h1 {
+    
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin: 0; /* Elimina el margen del título */
+    text-align: center; /* Centra el texto del título */
+}
+main{
+    padding: 60px 20px; /* Espacio alrededor del contenido principal */
+    margin-top: 60px; /* Asegura que el contenido no se superponga al encabezado */
+    max-width: 1200px; /* Ancho máximo para el contenido principal */
+    margin-left: auto; /* Centra el contenido horizontalmente */
+    margin-right: auto; /* Centra el contenido horizontalmente */       
+
+}
+form{
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Espacio alrededor del contenido del formulario */
+    border-radius: 5px; /* Bordes redondeados para el formulario */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el formulario */
+    margin-bottom: 20px; /* Espacio debajo del formulario */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    width: 100%; /* El formulario ocupa todo el ancho del contenedor */
+    max-width: 600px; /* Ancho máximo para el formulario */
+    margin-left: auto; /* Centra el formulario horizontalmente */
+    margin-right: auto; /* Centra el formulario horizontalmente */
+    text-align: center; /* Centra el texto dentro del formulario */
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%; /* El campo de entrada ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espacio interno para el campo de entrada */
+    margin-bottom: 10px; /* Espacio debajo del campo de entrada */
+    border: 1px solid #ccc; /* Borde gris claro para el campo de entrada */
+    border-radius: 5px; /* Bordes redondeados para el campo de entrada */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+.btn{
+    background-color: #007bff; /* Color de fondo azul para el botón */
+    color: #ffffff; /* Texto blanco para el botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Espacio alrededor del texto del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente para el botón */
+}
+.btn:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el cursor */
+    transform: translateY(-2px); /* Eleva el botón ligeramente */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el cambio de color y elevación */
+}
+
+select{
+    width: 100%; /* El campo de selección ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espacio interno para el campo de selección */
+    margin-bottom: 10px; /* Espacio debajo del campo de selección */
+    border: 1px solid #ccc; /* Borde gris claro para el campo de selección */
+    border-radius: 5px; /* Bordes redondeados para el campo de selección */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.volver {
+    margin-top: 20px; /* Espacio superior para el enlace de volver */
+    font-size: 18px; /* Tamaño de fuente para el enlace de volver */
+    align-items: center; /* Centra verticalmente el enlace de volver */
+    display: flex; /* Usa flexbox para alinear el enlace de volver */
+    justify-content: flex-end; /* Centra el enlace de volver horizontalmente */
+    
+}
+.material-symbols-outlined {
+    font-size: 24px; /* Tamaño del icono */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    display: inline-block; /* Permite que el icono se alinee con el texto */
+}
+.volver a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: 500; /* Peso de fuente para el enlace */
+    color: #007bff; /* Color azul para el enlace de volver */
+   background-color: rgba(0, 123, 255, 0.1); /* Fondo azul claro para el enlace al pasar el ratón */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.volver a:hover {
+    color: #0056b3; /* Cambia el color del enlace al pasar el ratón */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    background-color:  #bad7f7; /* Fondo azul para el enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace al pasar el ratón */
+}

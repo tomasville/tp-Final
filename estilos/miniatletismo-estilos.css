@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif; /* Fuente personalizada para el título */
+}
+body {
+    background-color: #f0f0f0; /* Color de fondo claro */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+header {
+    background-color: #343a40; /* Fondo oscuro para el encabezado */
+    color: #ffffff; /* Texto blanco para el encabezado */
+    padding: 10px 20px; /* Espacio alrededor del contenido del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior de la pantalla */
+    top: 0; /* Alinea el encabezado al borde superior de la ventana */
+    width: 100%; /* El encabezado ocupa todo el ancho de la ventana */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos del encabezado */
+    align-items: center; /* Centra verticalmente los elementos del encabezado */
+}
+nav {
+    display: flex; /* Usa flexbox para alinear los elementos del menú */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    padding: 10px 20px; /* Espacio alrededor del contenido del menú */
+    background-color: #343a40; /* Fondo oscuro para el menú */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el menú */
+    border-bottom: 1px solid #eee; /* Línea divisoria en la parte inferior */
+    /* Estilos adicionales para el menú */
+    border-radius: 5px; /* Bordes redondeados para el menú */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    max-width: 1200px; /* Ancho máximo para el menú */
+    margin-left: auto; /* Centra el menú horizontalmente */
+    margin-right: auto; /* Centra el menú horizontalmente */
+}
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos de la lista */
+    flex-wrap: wrap; /* Permite que los elementos de la lista se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos de la lista */
+    /* Estilos adicionales para la lista */
+    font-size: 18px; /* Tamaño de fuente para los elementos del menú */ 
+}
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+    position: relative; /* Posiciona los elementos de la lista para el submenú */
+    /* Estilos adicionales para los elementos de la lista */
+    font-size: 16px; /* Tamaño de fuente para los elementos del menú */
+    font-weight: 500; /* Peso de fuente para los elementos del menú */
+    color: #ffffff; /* Color de texto para los elementos del menú */
+    
+}
+nav ul li a {
+    color: #ffffff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    
+}
+nav ul li a:hover {
+    background-color: #495057; /* Cambia el color de fondo al pasar el ratón */
+    color: #ffffff; /* Cambia el color del texto al pasar el ratón */   
+}
+.logo{
+    width: 50px; /* Ancho de la imagen del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio a la derecha del logo */
+    border-radius: 100%; /* Bordes redondeados para la imagen del logo */
+}
+main {
+    padding: 20px; /* Espacio alrededor del contenido principal */
+    text-align: center; /* Centra el texto dentro del main */
+    background-color: #f8f9fa; /* Fondo claro para el contenido principal */
+    border-bottom: 1px solid #eee; /* Línea divisoria en la parte inferior */
+    margin-top: 60px; /* Espacio para evitar que el contenido se superponga con el menú */
+    /* Estilos adicionales para el contenido principal */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 1200px; /* Ancho máximo para el contenido principal */
+    margin-left: auto; /* Centra el contenido principal horizontalmente */
+    margin-right: auto; /* Centra el contenido principal horizontalmente */ 
+    padding: 40px; /* Espacio interno para el contenido principal */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    
+}
+section {
+    margin-bottom: 20px; /* Espacio entre secciones */
+    padding: 20px; /* Espacio interno para las secciones */
+    background-color: #ffffff; /* Fondo blanco para las secciones */
+    border-radius: 5px; /* Bordes redondeados para las secciones */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para las secciones */
+}
+section h2, section h3 {
+    color: #343a40; /* Color del texto de los encabezados */
+    margin-bottom: 10px; /* Espacio debajo de los encabezados */
+}
+section p {
+    color: #555; /* Color del texto de los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas para los párrafos */
+}
+.detalles{
+    display: flex; /* Usa flexbox para alinear los entrenadores */
+    flex-wrap: wrap; /* Permite que los entrenadores se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los entrenadores horizontalmente */
+    gap: 20px; /* Espacio entre los entrenadores */
+}
+.detalles-container {
+     background-color: #ffffff; /* Fondo blanco para cada entrenador */
+    border-radius: 10px; /* Bordes redondeados para cada entrenador */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para cada entrenador */
+    padding: 20px; /* Espacio interno para cada entrenador */
+    text-align: center; /* Centra el texto dentro de cada entrenador */
+    width: 250px; /* Ancho fijo para cada entrenador */
+    position: relative; /* Necesario para posicionar el icono dentro */
+}
+
+footer {
+    background-color: #343a40; /* Fondo oscuro para el pie de página */
+    color: #ffffff; /* Texto blanco para el pie de página */
+    text-align: center; /* Centra el texto dentro del footer */
+    padding: 20px; /* Espacio alrededor del contenido del footer */
+   
+    bottom: 0; /* Alinea el footer al borde inferior de la ventana */
+    width: 100%; /* El footer ocupa todo el ancho de la ventana */
+}
+.icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* Ajusta el tamaño y color según tu diseño */
+    font-size: 24px;
+    color: #343a40;
+    z-index: 2;
+}
+.boton{
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: 500; /* Peso de fuente para el enlace */
+    color: #007bff; /* Color azul para el enlace de volver */
+   background-color: rgba(0, 123, 255, 0.1); /* Fondo azul claro para el enlace al pasar el ratón */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Permite que el enlace se comporte como un bloque */
+}
+
+.boton:hover{
+    color: #0056b3; /* Cambia el color del enlace al pasar el ratón */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    background-color:  #bad7f7; /* Fondo azul para el enlace */
+}
+
+/* Modal para mapas */
+/* filepath: c:\Users\ville\OneDrive\Escritorio\Merpyc WEB\estilos\miniatletismo-estilos.css */
+.modal-mapas {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.5); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+.modal-mapas.activo {
+    display: flex;
+}
+.modal-contenido {
+    background: rgba(255,255,255,0.95); /* Fondo blanco casi opaco */
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: #343a40;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+    transition: color 0.2s;
+}
+.cerrar-modal:hover {
+    color: #d32f2f;
+}
+
+.volver {
+    margin-top: 20px; /* Espacio superior para el enlace de volver */
+    font-size: 18px; /* Tamaño de fuente para el enlace de volver */
+    align-items: center; /* Centra verticalmente el enlace de volver */
+    display: flex; /* Usa flexbox para alinear el enlace de volver */
+    justify-content: flex-end; /* Alinea el enlace de volver a la derecha */
+    
+}
+.material-symbols-outlined {
+    font-size: 24px; /* Tamaño del icono */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    display: inline-block; /* Permite que el icono se alinee con el texto */
+}
+.volver a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: 500; /* Peso de fuente para el enlace */
+    color: #007bff; /* Color azul para el enlace de volver */
+   background-color: rgba(0, 123, 255, 0.1); /* Fondo azul claro para el enlace al pasar el ratón */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}

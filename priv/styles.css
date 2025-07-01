@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif; /* Fuente personalizada para el título */
+}
+body {
+    background-color: #f0f0f0; /* Color de fondo claro */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+header {
+    background-color: #343a40; /* Fondo oscuro para el encabezado */
+    color: #ffffff; /* Texto blanco para el encabezado */
+    padding: 10px 20px; /* Espacio alrededor del contenido del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior de la pantalla */
+    top: 0; /* Alinea el encabezado al borde superior de la ventana */
+    width: 100%; /* El encabezado ocupa todo el ancho de la ventana */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos del encabezado */
+    align-items: center; /* Centra verticalmente los elementos del encabezado */
+}
+.title{
+    font-size: 24px; /* Tamaño de fuente para el título */
+    font-weight: 700; /* Peso de fuente para el título */
+    margin: 0; /* Elimina el margen del título */
+    color: #ffffff; /* Color del texto del título */
+}
+nav {
+    display: flex; /* Usa flexbox para alinear los elementos del menú */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    padding: 10px 20px; /* Espacio alrededor del contenido del menú */
+    background-color: #343a40; /* Fondo oscuro para el menú */
+
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    max-width: 1200px; /* Ancho máximo para el menú */
+    margin-left: auto; /* Centra el menú horizontalmente */
+    margin-right: auto; /* Centra el menú horizontalmente */
+}
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos de la lista */
+    flex-wrap: wrap; /* Permite que los elementos de la lista se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos de la lista */
+    font-size: 18px; /* Tamaño de fuente para los elementos del menú */
+}
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+    position: relative; /* Posiciona los elementos de la lista para el submenú */
+    font-size: 16px; /* Tamaño de fuente para los elementos del menú */
+    font-weight: 500; /* Peso de fuente para los elementos del menú */
+    color: #ffffff; /* Color de texto para los elementos del menú */
+}
+nav ul li a {
+    color: #ffffff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+}
+.icon{
+    margin-left: 5px; /* Espacio entre el texto y el icono */
+    width: 20px; /* Ancho del icono */
+    height: 20px; /* Alto del icono */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+    fill: #ffffff; /* Color del icono */
+}
+nav ul li a:hover {
+    
+    background-color: #4e5052; /* Cambia el fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil al pasar el ratón */
+
+}
+main {
+    padding: 80px 20px; /* Espacio alrededor del contenido principal, ajustado para el encabezado fijo */
+    max-width: 1200px; /* Ancho máximo para el contenido principal */
+    margin: auto; /* Centra el contenido principal horizontalmente */
+    background-color: #ffffff; /* Fondo blanco para el contenido principal */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    
+}
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande para el título */
+    color: #343a40; /* Color del texto del título */
+    text-align: center; /* Centra el título horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+h2 {
+    font-size: 1.8em; /* Tamaño de fuente para subtítulos */
+    color: #343a40; /* Color del texto de los subtítulos */
+    margin-top: 20px; /* Espacio encima de los subtítulos */
+    margin-bottom: 10px; /* Espacio debajo de los subtítulos */
+}
+.planes-container {
+    display: flex; /* Usa flexbox para alinear los planes */
+    flex-wrap: wrap; /* Permite que los planes se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra los planes horizontalmente */
+    gap: 20px; /* Espacio entre los planes */
+    margin-top: 20px; /* Espacio encima de los planes */
+    padding: 20px; /* Espacio alrededor de los planes */
+    background-color: #f8f9fa; /* Fondo claro para el contenedor de los planes */
+    border-radius: 5px; /* Bordes redondeados para el contenedor de los planes */
+}
+section {
+   flex: 1 1 300px; /* Permite que las secciones crezcan y se encojan, con un ancho base de 300px */
+   padding: 20px; /* Espacio alrededor del contenido de cada sección */
+   background-color: #ffffff; /* Fondo blanco para cada sección */
+   border-radius: 5px; /* Bordes redondeados para cada sección */
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para cada sección */
+   box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+   max-width: 800px; /* Ancho máximo para cada sección */
+   margin: 10px; /* Espacio alrededor de cada sección */
+}
+section h3{
+    font-size: 1.5em; /* Tamaño de fuente para los títulos de las secciones */
+    color: #343a40; /* Color del texto de los títulos de las secciones */
+    margin-bottom: 10px; /* Espacio debajo del título de la sección */
+    text-align: center; /* Centra el título de la sección horizontalmente */
+    flex: 1 1 100%; /* Permite que el título ocupe todo el ancho de la sección */
+}
+section img{
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la sección */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+section a{
+    color: #007bff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-top: 10px; /* Espacio encima del enlace */
+    font-weight: bold; /* Peso de fuente para el enlace */
+    display: inline-block; /* Permite aplicar padding y margin al enlace */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color del enlace */
+
+}
+.planes-pista {
+   flex: 1 1 300px; /* Permite que las secciones crezcan y se encojan, con un ancho base de 300px */
+   padding: 20px; /* Espacio alrededor del contenido de cada sección */
+   background-color: #ffffff; /* Fondo blanco para cada sección */
+   border-radius: 5px; /* Bordes redondeados para cada sección */
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para cada sección */
+   box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+   max-width: 800px; /* Ancho máximo para cada sección */
+   margin: 10px; /* Espacio alrededor de cada sección */
+}
+
+.planes-pista h4 {
+    font-size: 1.2em; /* Tamaño de fuente para los títulos de los planes de pista */
+    color: #343a40; /* Color del texto de los títulos de los planes de pista */
+    margin-bottom: 5px; /* Espacio debajo del título de los planes de pista */
+    text-align: center; /* Centra el título de los planes de pista horizontalmente */
+}
+.planes-pista a {
+    color: #007bff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-top: 10px; /* Espacio encima del enlace */
+    font-weight: bold; /* Peso de fuente para el enlace */
+    display: inline-block; /* Permite aplicar padding y margin al enlace */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color del enlace */
+
+}
+.planes-pista button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Espacio alrededor del texto del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    display: inline-block; /* Permite aplicar padding y margin al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+section a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+    color: #0056b3; /* Cambia el color del enlace al pasar el ratón */
+}
+.img-zoom-modal {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        left: 0; top: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.85);
+        justify-content: center;
+        align-items: center;
+    }
+    .img-zoom-modal img {
+        max-width: 90vw;
+        max-height: 90vh;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #000;
+    }
+    .img-zoom-cerrar {
+        position: absolute;
+        top: 20px; right: 40px;
+        font-size: 2.5rem;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 10001;
+    }
+.vista-previa-btn {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Espacio alrededor del texto del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    display: flex;
+}
+.logo {
+    width: 50px; /* Ancho del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+table{
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    margin-top: 20px; /* Espacio encima de la tabla */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    max-width: 1200px; /* Ancho máximo para la tabla */
+    margin-left: auto; /* Centra la tabla horizontalmente */
+    margin-right: auto; /* Centra la tabla horizontalmente */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    border-radius: 5px; /* Bordes redondeados para la tabla */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para la tabla */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es demasiado ancha */
+}
+footer {
+    background-color: #343a40; /* Fondo oscuro para el pie de página */
+    color: #ffffff; /* Texto blanco para el pie de página */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    padding: 20px; /* Espacio alrededor del contenido del pie de página */
+    position: fixed; /* Posiciona el pie de página relativo a su contenedor */
+    bottom: 0; /* Alinea el pie de página al borde inferior de la ventana */
+    width: 100%; /* El pie de página ocupa todo el ancho de la ventana */
+}
+
+.volver {
+    margin-top: 20px; /* Espacio superior para el enlace de volver */
+    font-size: 18px; /* Tamaño de fuente para el enlace de volver */
+    align-items: center; /* Centra verticalmente el enlace de volver */
+    display: flex; /* Usa flexbox para alinear el enlace de volver */
+    justify-content: flex-end; /* Centra el enlace de volver horizontalmente */
+    
+}
+.material-symbols-outlined {
+    font-size: 24px; /* Tamaño del icono */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    display: inline-block; /* Permite que el icono se alinee con el texto */
+}
+.volver a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: 500; /* Peso de fuente para el enlace */
+    color: #007bff; /* Color azul para el enlace de volver */
+   background-color: rgba(0, 123, 255, 0.1); /* Fondo azul claro para el enlace al pasar el ratón */
+    padding: 10px 15px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.volver a:hover {
+    color: #0056b3; /* Cambia el color del enlace al pasar el ratón */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    background-color:  #bad7f7; /* Fondo azul para el enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace al pasar el ratón */
+}
+
+.bienvenida{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #343a40; /* Color del texto de bienvenida */
+    text-align: center; /* Centra el texto de bienvenida horizontalmente */
+    font-weight: 500; /* Peso de fuente para el texto de bienvenida */
+}
+.archivos{
+    margin-bottom: 20px; /* Espacio inferior para cada sección de archivos */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Espacio entre los elementos de la sección de archivos */
+    border: 1px solid #eee; /* Borde gris claro para la sección de archivos */
+    padding: 10px; /* Espacio interno para la sección de archivos */
+    border-radius: 5px; /* Bordes redondeados para la sección de archivos */
+}
+.archivos input[type="file"] {
+    background-color: #f8f9fa; /* Fondo claro para el input de archivos */
+    border: 1px solid #ced4da; /* Borde gris claro para el input de archivos */
+    padding: 10px; /* Espacio interno para el input de archivos */
+    border-radius: 5px; /* Bordes redondeados para el input de archivos */
+    width: 100%; /* El input ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */   
+
+}
+.btn{
+    background-color: #248eff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Espacio alrededor del texto del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    display: inline-block; /* Permite aplicar padding y margin al botón */
+    width: 100%; /* El botón ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+
+}
+.btn:hover {
+    background-color: #066eff; /* Cambia el color de fondo al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    text-decoration: none; /* Elimina el subrayado del enlace al pasar el ratón */
+    transform: translateY(2px); /* Desplaza el botón ligeramente hacia abajo al pasar el ratón */
+}
+ #tabla-usuarios td .d-flex {
+        width: 100%;
+    }
+    #tabla-usuarios .btn {
+        min-width: 0;
+    }
